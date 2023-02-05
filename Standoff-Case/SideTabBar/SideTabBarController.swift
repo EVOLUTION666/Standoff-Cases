@@ -110,6 +110,10 @@ extension UIView {
         NSLayoutConstraint.activate(constraints)
     }
     
+    func setSize(size: CGSize) {
+        self.setSize(width: size.width, height: size.height)
+    }
+    
     func setSimpleConstraints(constant: CGFloat = 0) {
         guard let superview = superview else {
             return

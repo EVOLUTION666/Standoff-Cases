@@ -23,6 +23,7 @@ class ShopContainerView: UIView, UICollectionViewDelegate {
         caseCollectionView.dataSource = self
         return caseCollectionView
     }()
+    private lazy var groupView = GroupedStackView().forAutoLayout()
     
     // MARK: - Life cycle
     
@@ -48,20 +49,59 @@ extension ShopContainerView {
     }
     
     private func configureSubviews() {
-        addSubview(caseCollectionView)
+//        addSubview(caseCollectionView)
+        addSubview(groupView)
+        groupView.delegate = self
+        groupView.dataSource = self
     }
     
     private func configureConstraints() {
-        NSLayoutConstraint.activate([
-            
-            caseCollectionView.topAnchor.constraint(equalTo: self.topAnchor),
-            caseCollectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            caseCollectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            caseCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            
-        ])
+//        NSLayoutConstraint.activate([
+//
+//            caseCollectionView.topAnchor.constraint(equalTo: self.topAnchor),
+//            caseCollectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+//            caseCollectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            caseCollectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+//
+//        ])
+        groupView.setSimpleConstraints()
     }
     
+}
+
+extension ShopContainerView: GroupedStackViewDelegate, GroupedStackViewDataSource {
+    func groupedStack(groupedView: GroupedStackView, view for: IndexPath) -> UIView {
+        let view = ShopGroupItemView()
+        return view
+    }
+    
+    func numberOfGroups() -> Int {
+        return 2
+    }
+    
+    func numberOfItems(in group: Int) -> Int {
+        if group == 0 {
+            return 10
+        } else {
+            return 3
+        }
+    }
+    
+    func itemSize(groupView: GroupedStackView, in group: Int) -> CGSize {
+        let availableHeight = groupView.frame.height - self.contentInsets().top - abs(self.contentInsets().bottom) - self.groupsSapcing()
+        let height: CGFloat = availableHeight * 0.55
+        let height3: CGFloat = (availableHeight - height)
+        let width = height * 0.81
+        return group == 0 ? .init(width: width, height: height) : .init(width: width, height: height3)
+    }
+    
+    func contentInsets() -> UIEdgeInsets {
+        return .init(top: 6, left: 6, bottom: -6, right: -6)
+    }
+    
+    func groupsSapcing() -> CGFloat {
+        return 6
+    }
 }
 
 extension ShopContainerView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

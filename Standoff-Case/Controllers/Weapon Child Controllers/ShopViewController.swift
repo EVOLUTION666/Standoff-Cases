@@ -64,10 +64,10 @@ extension ShopViewController {
             shopNavBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             shopNavBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
-            shopContrainerView.topAnchor.constraint(equalTo: shopNavBar.bottomAnchor, constant: 6),
-            shopContrainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 6),
+            shopContrainerView.topAnchor.constraint(equalTo: shopNavBar.bottomAnchor),
+            shopContrainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             shopContrainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            shopContrainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -6),
+            shopContrainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             
         ])

@@ -101,7 +101,9 @@ class ContainerViewController: UIViewController {
 //}
 
 extension NSLayoutConstraint {
-    func activated() {
+    @discardableResult
+    func activated() -> NSLayoutConstraint {
         self.isActive = true
+        return self
     }
 }

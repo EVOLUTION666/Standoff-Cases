@@ -31,6 +31,8 @@
 		5536C4ED298D3BF6000E5C56 /* UIFont + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */; };
 		5536C4EF298DDC00000E5C56 /* ShopNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */; };
 		E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25690072989C9BE00560E01 /* ContainerViewController.swift */; };
+		E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */; };
+		E2AFCDF02990423C00071AD7 /* ShopGroupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */; };
 		E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */; };
 		E2E5C3CA298590AB008A2221 /* SideTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3C9298590AB008A2221 /* SideTabBarItem.swift */; };
 		E2E5C3CC298590CA008A2221 /* SideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3CB298590CA008A2221 /* SideTabBar.swift */; };
@@ -67,6 +69,8 @@
 		5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Ext.swift"; sourceTree = "<group>"; };
 		5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopNavBarView.swift; sourceTree = "<group>"; };
 		E25690072989C9BE00560E01 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedStackView.swift; sourceTree = "<group>"; };
+		E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGroupItemView.swift; sourceTree = "<group>"; };
 		E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarController.swift; sourceTree = "<group>"; };
 		E2E5C3C9298590AB008A2221 /* SideTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarItem.swift; sourceTree = "<group>"; };
 		E2E5C3CB298590CA008A2221 /* SideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBar.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				5532449D2985773B0004049F /* LaunchScreen.storyboard */,
 				553244A02985773B0004049F /* Info.plist */,
 				5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */,
+				E2AFCDEE298FC3AC00071AD7 /* CustomViews */,
 			);
 			path = "Standoff-Case";
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				5536C4D7298C1184000E5C56 /* ShopContainerView.swift */,
+				E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */,
 				5536C4DB298D37C6000E5C56 /* ShopCollectionViewCell.swift */,
 				5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */,
 			);
@@ -191,6 +197,14 @@
 				5536C4E4298D3AB0000E5C56 /* Oswald-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E2AFCDEE298FC3AC00071AD7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		E2E5C3C629857D72008A2221 /* SideTabBar */ = {
@@ -306,6 +320,7 @@
 				5536C4D12989D9A8000E5C56 /* ShopViewController.swift in Sources */,
 				E2E5C3CC298590CA008A2221 /* SideTabBar.swift in Sources */,
 				5536C4CF2989D9A0000E5C56 /* InventoryViewController.swift in Sources */,
+				E2AFCDF02990423C00071AD7 /* ShopGroupItemView.swift in Sources */,
 				E2E5C3D62986B035008A2221 /* TasksViewController.swift in Sources */,
 				E2E5C3CA298590AB008A2221 /* SideTabBarItem.swift in Sources */,
 				E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */,
@@ -315,6 +330,7 @@
 				55324493298577390004049F /* AppDelegate.swift in Sources */,
 				E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */,
 				E2E5C3D32986A59E008A2221 /* ProfileRankMapper.swift in Sources */,
+				E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */,
 				5536C4DC298D37C6000E5C56 /* ShopCollectionViewCell.swift in Sources */,
 				553244B329858D200004049F /* GoldCurrencyView.swift in Sources */,
 				553244A729857D650004049F /* WeaponViewController.swift in Sources */,
