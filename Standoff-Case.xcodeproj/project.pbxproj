@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5518CBB72991218D008BBE29 /* ChildPromotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518CBB62991218D008BBE29 /* ChildPromotionViewController.swift */; };
+		5518CBB929912384008BBE29 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518CBB829912384008BBE29 /* ShopViewController.swift */; };
+		5518CBBE29914907008BBE29 /* PromotionContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518CBBD29914907008BBE29 /* PromotionContainerView.swift */; };
 		55324493298577390004049F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55324492298577390004049F /* AppDelegate.swift */; };
 		55324495298577390004049F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55324494298577390004049F /* SceneDelegate.swift */; };
 		5532449C2985773B0004049F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5532449B2985773B0004049F /* Assets.xcassets */; };
@@ -18,7 +21,7 @@
 		553244B529868C150004049F /* InventoryContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553244B429868C150004049F /* InventoryContainerView.swift */; };
 		553244B72986A0950004049F /* InventoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553244B62986A0950004049F /* InventoryCollectionViewCell.swift */; };
 		5536C4CF2989D9A0000E5C56 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4CE2989D9A0000E5C56 /* InventoryViewController.swift */; };
-		5536C4D12989D9A8000E5C56 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4D02989D9A8000E5C56 /* ShopViewController.swift */; };
+		5536C4D12989D9A8000E5C56 /* ChildShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4D02989D9A8000E5C56 /* ChildShopViewController.swift */; };
 		5536C4D32989D9B1000E5C56 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4D22989D9B1000E5C56 /* MarketViewController.swift */; };
 		5536C4D8298C1184000E5C56 /* ShopContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4D7298C1184000E5C56 /* ShopContainerView.swift */; };
 		5536C4DC298D37C6000E5C56 /* ShopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4DB298D37C6000E5C56 /* ShopCollectionViewCell.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5518CBB62991218D008BBE29 /* ChildPromotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildPromotionViewController.swift; sourceTree = "<group>"; };
+		5518CBB829912384008BBE29 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		5518CBBD29914907008BBE29 /* PromotionContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionContainerView.swift; sourceTree = "<group>"; };
 		5532448F298577390004049F /* Standoff-Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-Case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55324492298577390004049F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55324494298577390004049F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +62,7 @@
 		553244B429868C150004049F /* InventoryContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryContainerView.swift; sourceTree = "<group>"; };
 		553244B62986A0950004049F /* InventoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		5536C4CE2989D9A0000E5C56 /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
-		5536C4D02989D9A8000E5C56 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		5536C4D02989D9A8000E5C56 /* ChildShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildShopViewController.swift; sourceTree = "<group>"; };
 		5536C4D22989D9B1000E5C56 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		5536C4D7298C1184000E5C56 /* ShopContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopContainerView.swift; sourceTree = "<group>"; };
 		5536C4DB298D37C6000E5C56 /* ShopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +97,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5518CBB529912170008BBE29 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				5518CBB829912384008BBE29 /* ShopViewController.swift */,
+				5536C4D02989D9A8000E5C56 /* ChildShopViewController.swift */,
+				5518CBB62991218D008BBE29 /* ChildPromotionViewController.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		5518CBBA299147CB008BBE29 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				5536C4CE2989D9A0000E5C56 /* InventoryViewController.swift */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		5518CBBB299147E1008BBE29 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				5536C4D22989D9B1000E5C56 /* MarketViewController.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		5518CBBC29914805008BBE29 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
 		55324486298577390004049F = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +169,7 @@
 		553244AC29857D8C0004049F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				553244A629857D650004049F /* WeaponViewController.swift */,
-				5536C4CD2989D983000E5C56 /* Weapon Child Controllers */,
+				5536C4CD2989D983000E5C56 /* Weapon Controllers */,
 				553244A829857D790004049F /* GameViewController.swift */,
 			);
 			path = Controllers;
@@ -145,19 +183,21 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5536C4CD2989D983000E5C56 /* Weapon Child Controllers */ = {
+		5536C4CD2989D983000E5C56 /* Weapon Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5536C4CE2989D9A0000E5C56 /* InventoryViewController.swift */,
-				5536C4D02989D9A8000E5C56 /* ShopViewController.swift */,
-				5536C4D22989D9B1000E5C56 /* MarketViewController.swift */,
+				553244A629857D650004049F /* WeaponViewController.swift */,
+				5518CBBA299147CB008BBE29 /* Inventory */,
+				5518CBB529912170008BBE29 /* Shop */,
+				5518CBBB299147E1008BBE29 /* Market */,
 			);
-			path = "Weapon Child Controllers";
+			path = "Weapon Controllers";
 			sourceTree = "<group>";
 		};
 		5536C4D4298C104E000E5C56 /* Weapon Views */ = {
 			isa = PBXGroup;
 			children = (
+				5518CBBC29914805008BBE29 /* Market */,
 				553244AD2985803B0004049F /* WeaponNavigationBarView.swift */,
 				553244B229858D200004049F /* GoldCurrencyView.swift */,
 				5536C4D6298C10E1000E5C56 /* Shop */,
@@ -182,6 +222,7 @@
 				E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */,
 				5536C4DB298D37C6000E5C56 /* ShopCollectionViewCell.swift */,
 				5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */,
+				5518CBBD29914907008BBE29 /* PromotionContainerView.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -317,7 +358,8 @@
 				5536C4ED298D3BF6000E5C56 /* UIFont + Ext.swift in Sources */,
 				5536C4D8298C1184000E5C56 /* ShopContainerView.swift in Sources */,
 				553244B529868C150004049F /* InventoryContainerView.swift in Sources */,
-				5536C4D12989D9A8000E5C56 /* ShopViewController.swift in Sources */,
+				5536C4D12989D9A8000E5C56 /* ChildShopViewController.swift in Sources */,
+				5518CBB72991218D008BBE29 /* ChildPromotionViewController.swift in Sources */,
 				E2E5C3CC298590CA008A2221 /* SideTabBar.swift in Sources */,
 				5536C4CF2989D9A0000E5C56 /* InventoryViewController.swift in Sources */,
 				E2AFCDF02990423C00071AD7 /* ShopGroupItemView.swift in Sources */,
@@ -331,6 +373,8 @@
 				E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */,
 				E2E5C3D32986A59E008A2221 /* ProfileRankMapper.swift in Sources */,
 				E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */,
+				5518CBBE29914907008BBE29 /* PromotionContainerView.swift in Sources */,
+				5518CBB929912384008BBE29 /* ShopViewController.swift in Sources */,
 				5536C4DC298D37C6000E5C56 /* ShopCollectionViewCell.swift in Sources */,
 				553244B329858D200004049F /* GoldCurrencyView.swift in Sources */,
 				553244A729857D650004049F /* WeaponViewController.swift in Sources */,

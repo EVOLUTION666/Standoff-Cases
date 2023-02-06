@@ -7,19 +7,9 @@
 
 import UIKit
 
-class ShopViewController: UIViewController {
+class ChildShopViewController: UIViewController {
     
     // MARK: - Properties
-    
-    override var prefersHomeIndicatorAutoHidden: Bool {
-        return true
-    }
-    
-    override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
-        return [.bottom]
-    }
-    
-    private lazy var shopNavBar = ShopNavBarView().forAutoLayout()
     
     private lazy var shopContrainerView: ShopContainerView = {
         let shopContrainerView = ShopContainerView()
@@ -38,37 +28,26 @@ class ShopViewController: UIViewController {
         configureUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        setNeedsUpdateOfHomeIndicatorAutoHidden()
-        setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
-    }
-    
 }
 
-extension ShopViewController {
+extension ChildShopViewController {
+    
     private func configureUI() {
         configureSubviews()
         configureConstraints()
     }
     
     private func configureSubviews() {
-        view.addSubview(shopNavBar)
         view.addSubview(shopContrainerView)
     }
     
     private func configureConstraints() {
         NSLayoutConstraint.activate([
-        
-            shopNavBar.topAnchor.constraint(equalTo: view.topAnchor),
-            shopNavBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            shopNavBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
-            shopContrainerView.topAnchor.constraint(equalTo: shopNavBar.bottomAnchor),
+            shopContrainerView.topAnchor.constraint(equalTo: view.topAnchor),
             shopContrainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             shopContrainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             shopContrainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
             
         ])
     }

@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol ShopNavBarViewDelegate: AnyObject {
+    func didSelect(index: Int)
+}
+
 class ShopNavBarView: UIView {
     
     // MARK: - Properties
+    
+    weak var delegate: ShopNavBarViewDelegate?
         
     private lazy var shopButton: UIButton = {
         let shopButton = UIButton(type: .system)
@@ -17,20 +23,22 @@ class ShopNavBarView: UIView {
         shopButton.backgroundColor = .green
         shopButton.setTitle("МАГАЗИН", for: .normal)
         shopButton.setTitleColor(.white, for: .normal)
-        shopButton.tag = 1
+        shopButton.tag = 0
         shopButton.titleLabel?.font = UIFont(name: "Oswald", size: 18)
+        shopButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
         return shopButton
     }()
     
     private lazy var promotionButton: UIButton = {
-        let inventoryButton = UIButton(type: .system)
-        inventoryButton.translatesAutoresizingMaskIntoConstraints = false
-        inventoryButton.backgroundColor = .red
-        inventoryButton.setTitle("АКЦИИ", for: .normal)
-        inventoryButton.setTitleColor(.white, for: .normal)
-        inventoryButton.tag = 0
-        inventoryButton.titleLabel?.font = UIFont(name: "Oswald", size: 18)
-        return inventoryButton
+        let promotionButton = UIButton(type: .system)
+        promotionButton.translatesAutoresizingMaskIntoConstraints = false
+        promotionButton.backgroundColor = .red
+        promotionButton.setTitle("АКЦИИ", for: .normal)
+        promotionButton.setTitleColor(.white, for: .normal)
+        promotionButton.tag = 1
+        promotionButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
+        promotionButton.titleLabel?.font = UIFont(name: "Oswald", size: 18)
+        return promotionButton
     }()
     
     private lazy var buttonStackView: UIStackView = {
@@ -52,6 +60,13 @@ class ShopNavBarView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         configureView()
+    }
+    
+    // MARK: - @objc funcs
+    
+    @objc
+    private func didChangeSelected(_ sender: UIButton) {
+        delegate?.didSelect(index: sender.tag)
     }
 
 }
