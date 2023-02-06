@@ -28,6 +28,8 @@ class ProfileRankCollectionCell: UICollectionViewCell {
     private lazy var titleLabel: UILabel = {
         let label = UILabel().forAutoLayout()
         label.textColor = .black
+        label.font = .oswald(size: 15)
+        label.textColor = .textPrimary
         label.textAlignment = .center
         return label
     }()
@@ -38,17 +40,18 @@ class ProfileRankCollectionCell: UICollectionViewCell {
         self.titleLabel.setSimpleConstraints()
         self.contentView.addSubview(titleView)
         self.contentView.addSubview(imageView)
-        self.backgroundColor = .blue
-        
+        self.backgroundColor = .blackWith20Alpha
+        self.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
+        self.layer.borderWidth = 1
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 2),
-            imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -2),
-            imageView.bottomAnchor.constraint(equalTo: self.titleView.topAnchor),
+            imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 4),
+            imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 4),
+            imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -4),
+            imageView.bottomAnchor.constraint(equalTo: self.titleView.topAnchor, constant: -4),
             
-            titleView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor),
-            titleView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 2),
-            titleView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -2),
+            titleView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -4),
+            titleView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 4),
+            titleView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -4),
         ])
         
     }

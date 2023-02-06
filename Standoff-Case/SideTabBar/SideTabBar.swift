@@ -30,7 +30,7 @@ class SideTabBar: UIView {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
-        stackView.alignment = .center
+        stackView.alignment = .fill
         return stackView.forAutoLayout()
     }()
     
@@ -38,12 +38,11 @@ class SideTabBar: UIView {
         super.init(frame: frame)
         self.addSubview(self.itemsStackView)
         NSLayoutConstraint.activate([
-            itemsStackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor),
+            itemsStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             itemsStackView.topAnchor.constraint(equalTo: self.topAnchor),
             itemsStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             itemsStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
         ])
-        backgroundColor = .blue
     }
     
     required init?(coder: NSCoder) {

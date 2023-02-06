@@ -34,6 +34,12 @@
 		5536C4ED298D3BF6000E5C56 /* UIFont + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */; };
 		5536C4EF298DDC00000E5C56 /* ShopNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */; };
 		E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25690072989C9BE00560E01 /* ContainerViewController.swift */; };
+		E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */; };
+		E25E79F1299176E300FF2C04 /* ProfileProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */; };
+		E25E79F3299176F900FF2C04 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79F2299176F900FF2C04 /* ProgressView.swift */; };
+		E25E79F82991773800FF2C04 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79F72991773800FF2C04 /* ProfileView.swift */; };
+		E25E79FB2991775E00FF2C04 /* CALayer+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79FA2991775E00FF2C04 /* CALayer+Gradient.swift */; };
+		E25E79FD2991778500FF2C04 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79FC2991778500FF2C04 /* UIColor+AppColors.swift */; };
 		E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */; };
 		E2AFCDF02990423C00071AD7 /* ShopGroupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */; };
 		E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */; };
@@ -75,6 +81,12 @@
 		5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Ext.swift"; sourceTree = "<group>"; };
 		5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopNavBarView.swift; sourceTree = "<group>"; };
 		E25690072989C9BE00560E01 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProgressView.swift; sourceTree = "<group>"; };
+		E25E79F2299176F900FF2C04 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		E25E79F72991773800FF2C04 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E25E79FA2991775E00FF2C04 /* CALayer+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Gradient.swift"; sourceTree = "<group>"; };
+		E25E79FC2991778500FF2C04 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedStackView.swift; sourceTree = "<group>"; };
 		E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGroupItemView.swift; sourceTree = "<group>"; };
 		E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarController.swift; sourceTree = "<group>"; };
@@ -240,6 +252,40 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		E25E79F42991770D00FF2C04 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				E25E79F2299176F900FF2C04 /* ProgressView.swift */,
+				E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		E25E79F52991771B00FF2C04 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				E2E5C3D22986A59E008A2221 /* ProfileRankMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		E25E79F62991772F00FF2C04 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				E25E79F72991773800FF2C04 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		E25E79F92991775200FF2C04 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E25E79FA2991775E00FF2C04 /* CALayer+Gradient.swift */,
+				E25E79FC2991778500FF2C04 /* UIColor+AppColors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E2AFCDEE298FC3AC00071AD7 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,9 +308,13 @@
 		E2E5C3CD2985922D008A2221 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */,
 				E2E5C3CE298592DC008A2221 /* ProfileViewController.swift */,
 				E2E5C3D02986A510008A2221 /* ProfileRankCollectionCell.swift */,
-				E2E5C3D22986A59E008A2221 /* ProfileRankMapper.swift */,
+				E25E79F92991775200FF2C04 /* Utils */,
+				E25E79F62991772F00FF2C04 /* ProfileView */,
+				E25E79F42991770D00FF2C04 /* ProgressView */,
+				E25E79F52991771B00FF2C04 /* Mapper */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -357,21 +407,27 @@
 				E2E5C3CF298592DC008A2221 /* ProfileViewController.swift in Sources */,
 				5536C4ED298D3BF6000E5C56 /* UIFont + Ext.swift in Sources */,
 				5536C4D8298C1184000E5C56 /* ShopContainerView.swift in Sources */,
+				E25E79FD2991778500FF2C04 /* UIColor+AppColors.swift in Sources */,
 				553244B529868C150004049F /* InventoryContainerView.swift in Sources */,
 				5536C4D12989D9A8000E5C56 /* ChildShopViewController.swift in Sources */,
 				5518CBB72991218D008BBE29 /* ChildPromotionViewController.swift in Sources */,
+				E25E79FB2991775E00FF2C04 /* CALayer+Gradient.swift in Sources */,
+				5536C4D12989D9A8000E5C56 /* ShopViewController.swift in Sources */,
 				E2E5C3CC298590CA008A2221 /* SideTabBar.swift in Sources */,
 				5536C4CF2989D9A0000E5C56 /* InventoryViewController.swift in Sources */,
 				E2AFCDF02990423C00071AD7 /* ShopGroupItemView.swift in Sources */,
 				E2E5C3D62986B035008A2221 /* TasksViewController.swift in Sources */,
 				E2E5C3CA298590AB008A2221 /* SideTabBarItem.swift in Sources */,
+				E25E79F82991773800FF2C04 /* ProfileView.swift in Sources */,
 				E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */,
 				553244AE2985803B0004049F /* WeaponNavigationBarView.swift in Sources */,
+				E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */,
 				553244A929857D790004049F /* GameViewController.swift in Sources */,
 				E2E5C3D12986A510008A2221 /* ProfileRankCollectionCell.swift in Sources */,
 				55324493298577390004049F /* AppDelegate.swift in Sources */,
 				E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */,
 				E2E5C3D32986A59E008A2221 /* ProfileRankMapper.swift in Sources */,
+				E25E79F1299176E300FF2C04 /* ProfileProgressView.swift in Sources */,
 				E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */,
 				5518CBBE29914907008BBE29 /* PromotionContainerView.swift in Sources */,
 				5518CBB929912384008BBE29 /* ShopViewController.swift in Sources */,
@@ -379,6 +435,7 @@
 				553244B329858D200004049F /* GoldCurrencyView.swift in Sources */,
 				553244A729857D650004049F /* WeaponViewController.swift in Sources */,
 				553244B72986A0950004049F /* InventoryCollectionViewCell.swift in Sources */,
+				E25E79F3299176F900FF2C04 /* ProgressView.swift in Sources */,
 				55324495298577390004049F /* SceneDelegate.swift in Sources */,
 				5536C4EF298DDC00000E5C56 /* ShopNavBarView.swift in Sources */,
 			);

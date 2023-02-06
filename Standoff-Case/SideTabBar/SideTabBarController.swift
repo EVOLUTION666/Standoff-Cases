@@ -10,6 +10,7 @@ import UIKit
 class SideTabBarController: UIViewController, SideTabBarDelegate {
     private lazy var sideTabBar: SideTabBar = {
         let tabBar = SideTabBar()
+        tabBar.backgroundColor = .blackWith70Alpha
         return tabBar.forAutoLayout()
     }()
     
@@ -21,10 +22,13 @@ class SideTabBarController: UIViewController, SideTabBarDelegate {
         return [.bottom]
     }
     
+    private lazy var gradient: CAGradientLayer = .baseGradientLayer
+    
     private var viewControllers: [UIViewController] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.layer.addSublayer(gradient)
         self.setupUI()
         
         let profileVC = ProfileViewController()
@@ -35,6 +39,7 @@ class SideTabBarController: UIViewController, SideTabBarDelegate {
         
         self.viewControllers = [profileVC, weaponVC, tasksVC]
         self.add(profileVC)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -43,20 +48,25 @@ class SideTabBarController: UIViewController, SideTabBarDelegate {
         setNeedsUpdateOfScreenEdgesDeferringSystemGestures()
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        gradient.frame = view.bounds
+    }
+    
     private func setupUI() {
         view.addSubview(sideTabBar)
         NSLayoutConstraint.activate([
             sideTabBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            sideTabBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            sideTabBar.topAnchor.constraint(equalTo: view.topAnchor),
             sideTabBar.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            sideTabBar.widthAnchor.constraint(equalToConstant: 120)
+            sideTabBar.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 50)
         ])
         
         sideTabBar.setItems([.init(title: nil, image: .init(named: "profile")!),
                              .init(title: nil, image: .init(named: "weapon")!),
                              .init(title: nil, image: .init(named: "game")!)])
-        self.view.backgroundColor = .white
         self.sideTabBar.sideTabBarDelegate = self
+        self.sideTabBar.backgroundColor = .clear
     }
     
     func didSelect(index: Int) {
