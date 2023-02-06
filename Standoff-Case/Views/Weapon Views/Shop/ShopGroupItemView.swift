@@ -135,7 +135,6 @@ extension ShopGroupItemView {
             casePriceLabel.bottomAnchor.constraint(equalTo: caseImageView.bottomAnchor),
             casePriceLabel.trailingAnchor.constraint(equalTo: caseImageView.trailingAnchor, constant: -6),
             
-            
         ])
     }
 }

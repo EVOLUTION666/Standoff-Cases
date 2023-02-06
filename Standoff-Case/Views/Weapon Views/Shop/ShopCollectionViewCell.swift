@@ -69,8 +69,6 @@ class ShopCollectionViewCell: UICollectionViewCell {
         return underTitleLineView
     }()
     
-    
-    
     // MARK: - Life cycle
     
     override init(frame: CGRect) {
