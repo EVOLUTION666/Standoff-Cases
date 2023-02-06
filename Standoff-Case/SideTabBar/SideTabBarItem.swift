@@ -16,26 +16,37 @@ class SideTabBarItem: UIControl {
     struct Style {
         let font: UIFont
         let titleColor: UIColor
+        let selectedTitleColor: UIColor
+        let selectedBackgroundColor: UIColor
+        let backgroundColor: UIColor
     }
     
     override var isSelected: Bool {
         didSet {
             if isSelected {
-                self.backgroundColor = .green
+                self.backgroundColor = self.style.selectedBackgroundColor
             } else {
-                self.backgroundColor = .red
+                self.backgroundColor = self.style.backgroundColor
             }
         }
     }
     
+    private var style = Style(font: .systemFont(ofSize: 15),
+                              titleColor: .white,
+                              selectedTitleColor: .white,
+                              selectedBackgroundColor: .blackWith50Alpha,
+                              backgroundColor: .blackWith70Alpha)
+    
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.setSize(width: 25, height: 25)
+        imageView.isUserInteractionEnabled = false
         return imageView.forAutoLayout()
     }()
     
     private lazy var titleLabel: UILabel = {
         let lbl = UILabel().forAutoLayout()
+        lbl.isUserInteractionEnabled = false
         return lbl
     }()
     
@@ -44,6 +55,7 @@ class SideTabBarItem: UIControl {
         stack.axis = .horizontal
         stack.distribution = .fill
         stack.alignment = .center
+        stack.isUserInteractionEnabled = false
         return stack
     }()
     
@@ -53,9 +65,9 @@ class SideTabBarItem: UIControl {
         self.isUserInteractionEnabled = true
         NSLayoutConstraint.activate([
             contentStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            contentStackView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            contentStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)
         ])
-        self.backgroundColor = .red
+        self.backgroundColor = style.backgroundColor
     }
     
     required init?(coder: NSCoder) {
@@ -70,8 +82,10 @@ class SideTabBarItem: UIControl {
     }
     
     func setStyle(_ style: Style) {
+        self.style = style
+        self.backgroundColor = isSelected ? style.selectedBackgroundColor : style.backgroundColor
+        self.titleLabel.textColor = isSelected ? style.selectedTitleColor : style.titleColor
         self.titleLabel.font = style.font
-        self.titleLabel.textColor = style.titleColor
     }
     
 }

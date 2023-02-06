@@ -12,43 +12,34 @@ struct RankModel {
     let image: UIImage
 }
 
-class ProfileViewController: UIViewController {
-    private lazy var profileView: UIView = {
-        let view = UIView().forAutoLayout()
-        view.backgroundColor = .green
-        view.setSize(height: UIScreen.main.bounds.size.height * 0.36)
+class ProfileViewController: BaseViewController {
+    private lazy var profileView: ProfileView = {
+        let view = ProfileView().forAutoLayout()
+        view.setSize(height: UIScreen.main.bounds.size.height * 0.33)
         return view
     }()
     
-    private lazy var avatarImageView: UIImageView = {
-        let imageView = UIImageView()
-        return imageView.forAutoLayout()
+    private lazy var progressView: ProfileProgressView = {
+        let view = ProfileProgressView().forAutoLayout()
+        return view
     }()
     
-    private lazy var nameLabel: UILabel = {
-        let label = UILabel()
-        return label.forAutoLayout()
-    }()
-    
-    private lazy var stausLabel: UILabel = {
-        let label = UILabel()
-        return label.forAutoLayout()
-    }()
-    
-    private lazy var progressBackgroundView: UIView = {
+    private lazy var ranksBackgroundView: UIView = {
         let view = UIView().forAutoLayout()
-        view.backgroundColor = .magenta
+        view.backgroundColor = .blackWith50Alpha
         return view
     }()
     
     private lazy var ranksCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout).forAutoLayout()
-        collectionView.setSize(height: UIScreen.main.bounds.size.height * 0.55)
+        collectionView.setSize(height: UIScreen.main.bounds.size.height * 0.53)
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.showsVerticalScrollIndicator = false
         collectionView.register(ProfileRankCollectionCell.self, forCellWithReuseIdentifier: "ProfileRankCollectionCell")
-        collectionView.backgroundColor = .red
+        collectionView.backgroundColor = .clear
+        collectionView.alwaysBounceVertical = true
         return collectionView
     }()
     
@@ -56,24 +47,30 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+        view.backgroundColor = .clear
         view.addSubview(profileView)
-        view.addSubview(progressBackgroundView)
-        view.addSubview(ranksCollectionView)
+        view.addSubview(progressView)
+        view.addSubview(ranksBackgroundView)
+        ranksBackgroundView.addSubview(ranksCollectionView)
         
         NSLayoutConstraint.activate([
             profileView.topAnchor.constraint(equalTo: view.topAnchor),
-            profileView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            profileView.bottomAnchor.constraint(equalTo: progressBackgroundView.topAnchor),
+            profileView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 4),
+            profileView.bottomAnchor.constraint(equalTo: progressView.topAnchor, constant: -2),
             profileView.widthAnchor.constraint(equalToConstant: 310),
             
-            progressBackgroundView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            progressBackgroundView.widthAnchor.constraint(equalTo: profileView.widthAnchor),
+            progressView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 4),
+            progressView.widthAnchor.constraint(equalTo: profileView.widthAnchor),
             
-            ranksCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            ranksCollectionView.topAnchor.constraint(equalTo: progressBackgroundView.bottomAnchor),
-            ranksCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            ranksCollectionView.widthAnchor.constraint(equalTo: profileView.widthAnchor),
+            ranksBackgroundView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            ranksBackgroundView.topAnchor.constraint(equalTo: progressView.bottomAnchor, constant: 2),
+            ranksBackgroundView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 4),
+            ranksBackgroundView.widthAnchor.constraint(equalTo: profileView.widthAnchor),
+            
+            ranksCollectionView.bottomAnchor.constraint(equalTo: ranksBackgroundView.bottomAnchor, constant: -6),
+            ranksCollectionView.topAnchor.constraint(equalTo: ranksBackgroundView.topAnchor, constant: 6),
+            ranksCollectionView.leadingAnchor.constraint(equalTo: ranksBackgroundView.leadingAnchor, constant: 6),
+            ranksCollectionView.trailingAnchor.constraint(equalTo: ranksBackgroundView.trailingAnchor, constant: -6),
         ])
     }
 }
@@ -91,10 +88,10 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: 148, height: 96)
+        .init(width: (collectionView.frame.width / 2) - 3, height: 96)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 4
+        return 6
     }
 }
