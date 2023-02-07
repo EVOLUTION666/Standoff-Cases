@@ -13,7 +13,7 @@ class GoldCurrencyView: UIView {
     
     private lazy var goldIcon: UIImageView = {
         let goldIcon = UIImageView()
-        goldIcon.image = UIImage(named: "game")
+        goldIcon.image = UIImage(named: "gold")
         goldIcon.translatesAutoresizingMaskIntoConstraints = false
         goldIcon.contentMode = .scaleAspectFit
 //        goldIcon.widthAnchor.constraint(equalToConstant: 20).isActive = true
@@ -32,7 +32,7 @@ class GoldCurrencyView: UIView {
     
     private lazy var plusIcon: UIImageView = {
         let plusIcon = UIImageView()
-        plusIcon.image = UIImage(named: "game")
+        plusIcon.image = UIImage(named: "plus")
         plusIcon.translatesAutoresizingMaskIntoConstraints = false
         plusIcon.contentMode = .scaleAspectFit
         plusIcon.widthAnchor.constraint(equalToConstant: 20).isActive = true
