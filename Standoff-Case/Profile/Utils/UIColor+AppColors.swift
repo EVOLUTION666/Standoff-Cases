@@ -18,6 +18,11 @@ extension UIColor {
         .init(named: "baseGradientEnd") ?? .clear
     }
     
+    // #000000 - 40%
+    static var blackWith40Alpha: UIColor {
+        .init(named: "blackWith40Alpha") ?? .clear
+    }
+    
     // #000000 - 50%
     static var blackWith50Alpha: UIColor {
         .init(named: "blackWith50Alpha") ?? .clear
@@ -41,6 +46,11 @@ extension UIColor {
     // #000000 - 20%
     static var blackWith20Alpha: UIColor {
         .init(named: "blackWith20Alpha") ?? .clear
+    }
+    
+    // #000000 - 15%
+    static var blackWith15Alpha: UIColor {
+        .init(named: "blackWith15Alpha") ?? .clear
     }
     
     // #156F9E
