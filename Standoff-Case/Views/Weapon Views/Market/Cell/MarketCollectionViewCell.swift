@@ -14,7 +14,7 @@ class MarketCollectionViewCell: UICollectionViewCell {
     private lazy var squareBackViewWeapon: UIView = {
         let squareBackView = UIView()
         squareBackView.translatesAutoresizingMaskIntoConstraints = false
-        squareBackView.backgroundColor = .gray
+        squareBackView.backgroundColor = .clear
 
         return squareBackView
     }()
@@ -39,7 +39,7 @@ class MarketCollectionViewCell: UICollectionViewCell {
         let weaponIcon = UIImageView()
         weaponIcon.translatesAutoresizingMaskIntoConstraints = false
         weaponIcon.image = UIImage(named: "akr")
-        weaponIcon.contentMode = .scaleAspectFill
+        weaponIcon.contentMode = .scaleAspectFit
         weaponIcon.clipsToBounds = true
         return weaponIcon
     }()

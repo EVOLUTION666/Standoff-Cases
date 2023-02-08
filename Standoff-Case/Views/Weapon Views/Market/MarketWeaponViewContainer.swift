@@ -14,7 +14,7 @@ class MarketWeaponViewContainer: UIView, UICollectionViewDelegate {
     private lazy var backView: UIView = {
        let backView = UIView()
         backView.translatesAutoresizingMaskIntoConstraints = false
-        backView.backgroundColor = .black
+        backView.backgroundColor = .clear
         return backView
     }()
     
@@ -22,7 +22,7 @@ class MarketWeaponViewContainer: UIView, UICollectionViewDelegate {
         let viewLayout = UICollectionViewFlowLayout()
         let collectionMarketView = UICollectionView(frame: .zero, collectionViewLayout: viewLayout)
         collectionMarketView.translatesAutoresizingMaskIntoConstraints = false
-        collectionMarketView.backgroundColor = .orange
+        collectionMarketView.backgroundColor = .clear
         collectionMarketView.showsVerticalScrollIndicator = false
         collectionMarketView.register(MarketCollectionViewCell.self, forCellWithReuseIdentifier: "marketCell")
         collectionMarketView.delegate = self
@@ -49,7 +49,7 @@ class MarketWeaponViewContainer: UIView, UICollectionViewDelegate {
 extension MarketWeaponViewContainer {
     
     private func configureView() {
-        backgroundColor = .black
+        backgroundColor = .blackWith50Alpha
         configureSubviews()
         setupConstraints()
     }
@@ -83,14 +83,20 @@ extension MarketWeaponViewContainer: UICollectionViewDataSource, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "marketCell", for: indexPath) as! MarketCollectionViewCell
+        cell.contentView.backgroundColor = .gray2With30Alpha
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: (collectionView.frame.width - 8) / 5, height: (collectionView.frame.width - 8) / 5 * 0.66)
+        let widthCell = (collectionView.frame.width - 15) / 4
+        return .init(width: widthCell, height: widthCell * 0.79)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 5
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
     }
 }
+

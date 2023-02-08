@@ -44,7 +44,7 @@ class ChildTradeViewController: UIViewController {
 extension ChildTradeViewController {
     
     private func configureUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .clear
         configureSubviews()
         configureConstraints()
     }
