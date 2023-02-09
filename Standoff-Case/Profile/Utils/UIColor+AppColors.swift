@@ -38,9 +38,9 @@ extension UIColor {
         .init(named: "gray2With30Alpha") ?? .clear
     }
     
-    // #434343 - 30%
-    static var grayWith30Alpha: UIColor {
-        .init(named: "grayWith30Alpha") ?? .clear
+    // #434343 - 50%
+    static var grayWith50Alpha: UIColor {
+        .init(named: "grayWith50Alpha") ?? .clear
     }
     
     // #000000 - 20%
@@ -71,6 +71,21 @@ extension UIColor {
     // #FFFFFF
     static var textPrimary: UIColor {
         .init(named: "textPrimary") ?? .clear
+    }
+    
+    // #6F4B25
+    static var goldGradientEnd: UIColor {
+        .init(named: "goldGradientEnd") ?? .clear
+    }
+    
+    // #A57729
+    static var goldGradientStart: UIColor {
+        .init(named: "goldGradientStart") ?? .clear
+    }
+    
+    // #343840
+    static var goldSquare: UIColor {
+        .init(named: "goldSquare") ?? .clear
     }
 
 }

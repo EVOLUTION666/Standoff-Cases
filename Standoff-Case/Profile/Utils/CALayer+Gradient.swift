@@ -23,4 +23,12 @@ extension CALayer {
         gradient.endPoint = .init(x: 1, y: 0.5)
         return gradient
     }
+    
+    static var goldGradientLayer: CAGradientLayer {
+        let gradient = CAGradientLayer()
+        gradient.colors = [UIColor.goldGradientStart.cgColor, UIColor.goldGradientEnd.cgColor]
+        gradient.startPoint = .init(x: 0, y: 1)
+        gradient.endPoint = .init(x: 1, y: 0)
+        return gradient
+    }
 }

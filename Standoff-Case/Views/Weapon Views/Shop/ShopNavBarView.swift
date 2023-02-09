@@ -16,13 +16,25 @@ class ShopNavBarView: UIView {
     // MARK: - Properties
     
     weak var delegate: ShopNavBarViewDelegate?
+    
+    private var selectedIndex = 0 {
+        didSet {
+            [shopButton, promotionButton].forEach {
+                if $0.tag == oldValue {
+                    $0.backgroundColor = .clear
+                }
+                if $0.tag == selectedIndex {
+                    $0.backgroundColor = .grayWith50Alpha
+                }
+            }
+        }
+    }
         
     private lazy var shopButton: UIButton = {
         let shopButton = UIButton(type: .system)
         shopButton.translatesAutoresizingMaskIntoConstraints = false
-        shopButton.backgroundColor = .green
         shopButton.setTitle("МАГАЗИН", for: .normal)
-        shopButton.setTitleColor(.white, for: .normal)
+        shopButton.setTitleColor(.textPrimary, for: .normal)
         shopButton.tag = 0
         shopButton.titleLabel?.font = UIFont(name: "Oswald", size: 18)
         shopButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
@@ -32,9 +44,8 @@ class ShopNavBarView: UIView {
     private lazy var promotionButton: UIButton = {
         let promotionButton = UIButton(type: .system)
         promotionButton.translatesAutoresizingMaskIntoConstraints = false
-        promotionButton.backgroundColor = .red
         promotionButton.setTitle("АКЦИИ", for: .normal)
-        promotionButton.setTitleColor(.white, for: .normal)
+        promotionButton.setTitleColor(.textPrimary, for: .normal)
         promotionButton.tag = 1
         promotionButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
         promotionButton.titleLabel?.font = UIFont(name: "Oswald", size: 18)
@@ -66,6 +77,7 @@ class ShopNavBarView: UIView {
     
     @objc
     private func didChangeSelected(_ sender: UIButton) {
+        self.selectedIndex = sender.tag
         delegate?.didSelect(index: sender.tag)
     }
 
@@ -76,6 +88,8 @@ class ShopNavBarView: UIView {
 extension ShopNavBarView {
     
     private func configureView() {
+        self.backgroundColor = .blackWith40Alpha
+        shopButton.backgroundColor = .grayWith50Alpha
         configureSubviews()
         configureConstraints()
     }

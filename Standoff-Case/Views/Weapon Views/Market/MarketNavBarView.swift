@@ -18,12 +18,24 @@ class MarketNavBarView: UIView {
     
     weak var delegate: MarketNavBarViewDelegate?
     
+    private var selectedIndex = 0 {
+        didSet {
+            [tradeAreaButton, historyButton].forEach {
+                if $0.tag == oldValue {
+                    $0.backgroundColor = .clear
+                }
+                if $0.tag == selectedIndex {
+                    $0.backgroundColor = .grayWith50Alpha
+                }
+            }
+        }
+    }
+    
     private lazy var tradeAreaButton: UIButton = {
         let tradeAreaButton = UIButton(type: .system)
         tradeAreaButton.translatesAutoresizingMaskIntoConstraints = false
-        tradeAreaButton.backgroundColor = .green
         tradeAreaButton.setTitle("ПЛОЩАДКА", for: .normal)
-        tradeAreaButton.setTitleColor(.white, for: .normal)
+        tradeAreaButton.setTitleColor(.textPrimary, for: .normal)
         tradeAreaButton.tag = 0
         tradeAreaButton.titleLabel?.font = UIFont(name: "Oswald", size: 18)
         tradeAreaButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
@@ -33,9 +45,8 @@ class MarketNavBarView: UIView {
     private lazy var historyButton: UIButton = {
         let historyButton = UIButton(type: .system)
         historyButton.translatesAutoresizingMaskIntoConstraints = false
-        historyButton.backgroundColor = .red
         historyButton.setTitle("АКЦИИ", for: .normal)
-        historyButton.setTitleColor(.white, for: .normal)
+        historyButton.setTitleColor(.textPrimary, for: .normal)
         historyButton.tag = 1
         historyButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
         historyButton.titleLabel?.font = UIFont(name: "Oswald", size: 18)
@@ -65,6 +76,7 @@ class MarketNavBarView: UIView {
     
     @objc
     private func didChangeSelected(_ sender: UIButton) {
+        self.selectedIndex = sender.tag
         delegate?.didSelect(index: sender.tag)
     }
 
@@ -75,7 +87,8 @@ class MarketNavBarView: UIView {
 extension MarketNavBarView {
     
     private func configureView() {
-        backgroundColor = .black
+        backgroundColor = .blackWith40Alpha
+        tradeAreaButton.backgroundColor = .grayWith50Alpha
         configureSubviews()
         setupConstraints()
     }

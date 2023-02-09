@@ -61,7 +61,7 @@ class ProgressView: UIView {
             endLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -(Constants.progressHeight + 4)),
         ])
         
-        progressBackgroundLayer.backgroundColor = UIColor.white.withAlphaComponent(0.2).cgColor
+        progressBackgroundLayer.backgroundColor = UIColor.textPrimary.withAlphaComponent(0.2).cgColor
         progressLayer.backgroundColor = UIColor.accentOrange.cgColor
     }
     

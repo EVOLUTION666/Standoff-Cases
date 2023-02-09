@@ -31,7 +31,7 @@ class ShopGroupItemView: UIView {
     private lazy var underTitleLineView: UIView = {
        let underTitleLineView = UIView()
         underTitleLineView.translatesAutoresizingMaskIntoConstraints = false
-        underTitleLineView.backgroundColor = .white
+        underTitleLineView.backgroundColor = .textPrimary
         return underTitleLineView
     }()
     
@@ -56,7 +56,7 @@ class ShopGroupItemView: UIView {
        let casePriceLabel = UILabel()
         casePriceLabel.translatesAutoresizingMaskIntoConstraints = false
         casePriceLabel.text = "100"
-        casePriceLabel.textColor = .white
+        casePriceLabel.textColor = .textPrimary
         casePriceLabel.font = .oswald(size: 14)
         casePriceLabel.textAlignment = .center
         return casePriceLabel

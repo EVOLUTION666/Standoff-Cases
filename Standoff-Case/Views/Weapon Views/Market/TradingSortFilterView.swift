@@ -14,7 +14,7 @@ class TradingSortFilterView: UIView {
     private lazy var backView: UIView = {
         let backView = UIView()
         backView.translatesAutoresizingMaskIntoConstraints = false
-        backView.backgroundColor = .lightGray
+        backView.backgroundColor = .blackWith15Alpha
         return backView
     }()
     
@@ -38,7 +38,7 @@ class TradingSortFilterView: UIView {
        let sortingLabel = UILabel()
         sortingLabel.translatesAutoresizingMaskIntoConstraints = false
         sortingLabel.text = "Сортировать по:"
-        sortingLabel.textColor = .white
+        sortingLabel.textColor = .textPrimary
         sortingLabel.textAlignment = .left
         sortingLabel.font = .oswald(size: 12)
         return sortingLabel
@@ -48,10 +48,9 @@ class TradingSortFilterView: UIView {
         let rareSortButton = UIButton(type: .system)
         rareSortButton.translatesAutoresizingMaskIntoConstraints = false
         rareSortButton.setTitle("Редкости", for: .normal)
-        rareSortButton.setTitleColor(.white, for: .normal)
+        rareSortButton.setTitleColor(.textPrimary, for: .normal)
         rareSortButton.backgroundColor = .blackWith20Alpha
         rareSortButton.titleLabel?.font = .oswald(size: 12, weight: .light)
-        rareSortButton.backgroundColor = .orange
         return rareSortButton
     }()
     
@@ -59,10 +58,9 @@ class TradingSortFilterView: UIView {
         let priceSortButton = UIButton(type: .system)
         priceSortButton.translatesAutoresizingMaskIntoConstraints = false
         priceSortButton.setTitle("Цене", for: .normal)
-        priceSortButton.setTitleColor(.white, for: .normal)
+        priceSortButton.setTitleColor(.textPrimary, for: .normal)
         priceSortButton.backgroundColor = .blackWith20Alpha
         priceSortButton.titleLabel?.font = .oswald(size: 12, weight: .light)
-        priceSortButton.backgroundColor = .red
         return priceSortButton
     }()
     
@@ -74,18 +72,11 @@ class TradingSortFilterView: UIView {
         return filterStackView
     }()
     
-    private lazy var filterView: UIView = {
-       let filterView = UIView()
-        filterView.translatesAutoresizingMaskIntoConstraints = false
-        filterView.backgroundColor = .blackWith40Alpha
-        return filterView
-    }()
-    
     private lazy var filterLabel: UILabel = {
        let filterLabel = UILabel()
         filterLabel.translatesAutoresizingMaskIntoConstraints = false
         filterLabel.text = "Фильтр"
-        filterLabel.textColor = .white
+        filterLabel.textColor = .textPrimary
         filterLabel.font = .oswald(size: 12)
         return filterLabel
     }()
@@ -93,10 +84,20 @@ class TradingSortFilterView: UIView {
     private lazy var filterButton: UIButton = {
        let filterButton = UIButton()
         filterButton.translatesAutoresizingMaskIntoConstraints = false
-        filterButton.setTitle("Фильтр", for: .normal)
-        filterButton.setImage(UIImage(named: "filter"), for: .normal)
-        filterButton.backgroundColor = .orange
-        filterButton.titleLabel?.font = .oswald(size: 12)
+        filterButton.backgroundColor = .blackWith40Alpha
+        if #available(iOS 15.0, *) {
+            var buttonConfiguration = UIButton.Configuration.plain()
+            buttonConfiguration.image = UIImage(named: "filter")
+            buttonConfiguration.imagePlacement = .trailing
+            buttonConfiguration.titleAlignment = .leading
+            buttonConfiguration.contentInsets = .zero
+            
+            var attributedContainer = AttributedString("Фильтр", attributes: AttributeContainer([NSAttributedString.Key.font : UIFont.oswald(size: 12, weight: .regular), NSAttributedString.Key.foregroundColor: UIColor.textPrimary]))
+            buttonConfiguration.attributedTitle = attributedContainer
+            filterButton.configuration = buttonConfiguration
+        } else {
+            filterButton.setImage(UIImage(named: "filter"), for: .normal)
+        }
         filterButton.contentMode = .scaleAspectFit
         filterButton.layer.masksToBounds = true
         return filterButton
@@ -121,7 +122,7 @@ class TradingSortFilterView: UIView {
 extension TradingSortFilterView {
     
     private func configureView() {
-        backgroundColor = .black
+        backgroundColor = .clear
         configureSubviews()
         setupConstraints()
     }

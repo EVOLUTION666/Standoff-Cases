@@ -39,10 +39,5 @@ extension WeaponViewController {
     
     private func configureSubviews() {
         self.contentStackView.addArrangedSubview(weaponNavBar)
-        configureConstraints()
-    }
-    
-    private func configureConstraints() {
-        weaponNavBar.heightAnchor.constraint(equalToConstant: 40).activated()
     }
 }

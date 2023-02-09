@@ -14,9 +14,9 @@ class PromotionContainerView: UIView {
     private lazy var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Список акций пуст"
-        label.font = .oswald(size: 24)
-        label.textColor = .black
+        label.text = "Список акций пуст".uppercased()
+        label.font = .oswald(size: 20)
+        label.textColor = .textPrimary
         return label
     }()
     

@@ -11,21 +11,24 @@ class GoldCurrencyView: UIView {
     
     //MARK: - Properties
     
+    private let gradient = CAGradientLayer.goldGradientLayer
+    
     private lazy var goldIcon: UIImageView = {
         let goldIcon = UIImageView()
         goldIcon.image = UIImage(named: "gold")
         goldIcon.translatesAutoresizingMaskIntoConstraints = false
         goldIcon.contentMode = .scaleAspectFit
-//        goldIcon.widthAnchor.constraint(equalToConstant: 20).isActive = true
-//        goldIcon.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        goldIcon.setSize(width: 10, height: 10)
         
         return goldIcon
     }()
     
     private lazy var valueText: UILabel = {
         let valueText = UILabel()
-        valueText.text = "100"
+        valueText.text = "100000000"
+        valueText.font = .oswald(size: 12, weight: .light)
         valueText.textAlignment = .center
+        valueText.textColor = .textPrimary
         valueText.translatesAutoresizingMaskIntoConstraints = false
         return valueText
     }()
@@ -35,16 +38,14 @@ class GoldCurrencyView: UIView {
         plusIcon.image = UIImage(named: "plus")
         plusIcon.translatesAutoresizingMaskIntoConstraints = false
         plusIcon.contentMode = .scaleAspectFit
-        plusIcon.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        plusIcon.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        plusIcon.setSize(width: 10, height: 10)
         return plusIcon
     }()
     
     private lazy var blackView: UIView = {
        let blackView = UIView()
-        blackView.backgroundColor = .black
+        blackView.backgroundColor = .goldSquare
         blackView.translatesAutoresizingMaskIntoConstraints = false
-        blackView.layer.opacity = 0.3
         return blackView
     }()
     
@@ -53,7 +54,8 @@ class GoldCurrencyView: UIView {
         generalStackView.translatesAutoresizingMaskIntoConstraints = false
         generalStackView.axis = .horizontal
         generalStackView.distribution = .fill
-        generalStackView.alignment = .fill
+        generalStackView.spacing = 2
+        generalStackView.alignment = .center
         return generalStackView
     }()
     
@@ -69,6 +71,11 @@ class GoldCurrencyView: UIView {
         configureView()
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradient.frame = self.bounds
+    }
+    
 }
 
 //MARK: - Extension
@@ -76,7 +83,7 @@ class GoldCurrencyView: UIView {
 extension GoldCurrencyView {
     
     private func configureView() {
-        backgroundColor = .yellow
+        self.layer.addSublayer(gradient)
         configureSubviews()
         configureConstraints()
     }
@@ -93,18 +100,12 @@ extension GoldCurrencyView {
         NSLayoutConstraint.activate([
             
             generalStackView.topAnchor.constraint(equalTo: topAnchor),
-            generalStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            generalStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
             generalStackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             generalStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             blackView.heightAnchor.constraint(equalTo: self.heightAnchor),
             blackView.widthAnchor.constraint(equalTo: blackView.heightAnchor),
-            
-            
-//            plusIcon.topAnchor.constraint(equalTo: blackView.topAnchor),
-//            plusIcon.leadingAnchor.constraint(equalTo: blackView.leadingAnchor),
-//            plusIcon.trailingAnchor.constraint(equalTo: blackView.trailingAnchor),
-//            plusIcon.bottomAnchor.constraint(equalTo: blackView.bottomAnchor),
             
             plusIcon.centerYAnchor.constraint(equalTo: blackView.centerYAnchor),
             plusIcon.centerXAnchor.constraint(equalTo: blackView.centerXAnchor),

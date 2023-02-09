@@ -40,10 +40,10 @@ extension InventoryViewController {
     
     private func configureConstraints() {
         NSLayoutConstraint.activate([
-            inventoryContainerView.topAnchor.constraint(equalTo: view.topAnchor),
-            inventoryContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            inventoryContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            inventoryContainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            inventoryContainerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 5),
+            inventoryContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5),
+            inventoryContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5),
+            inventoryContainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -5),
         ])
     }
 }

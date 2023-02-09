@@ -15,12 +15,24 @@ class WeaponNavigationBarView: UIView {
     
     weak var delegate: WeaponNavigationBarViewDelegate?
     
+    private var selectedIndex = 0 {
+        didSet {
+            [inventoryButton, shopButton, marketButton].forEach {
+                if $0.tag == oldValue {
+                    $0.backgroundColor = .clear
+                }
+                if $0.tag == selectedIndex {
+                    $0.backgroundColor = .grayWith50Alpha
+                }
+            }
+        }
+    }
+    
     private lazy var inventoryButton: UIButton = {
         let inventoryButton = UIButton(type: .system)
         inventoryButton.translatesAutoresizingMaskIntoConstraints = false
-        inventoryButton.backgroundColor = .red
         inventoryButton.setTitle("ИНВЕНТАРЬ", for: .normal)
-        inventoryButton.setTitleColor(.white, for: .normal)
+        inventoryButton.setTitleColor(.textPrimary, for: .normal)
         inventoryButton.tag = 0
         inventoryButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
         inventoryButton.titleLabel?.font = .oswald(size: 18)
@@ -30,9 +42,8 @@ class WeaponNavigationBarView: UIView {
     private lazy var shopButton: UIButton = {
         let shopButton = UIButton(type: .system)
         shopButton.translatesAutoresizingMaskIntoConstraints = false
-        shopButton.backgroundColor = .green
         shopButton.setTitle("МАГАЗИН", for: .normal)
-        shopButton.setTitleColor(.white, for: .normal)
+        shopButton.setTitleColor(.textPrimary, for: .normal)
         shopButton.tag = 1
         shopButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
         shopButton.titleLabel?.font = .oswald(size: 18)
@@ -42,9 +53,8 @@ class WeaponNavigationBarView: UIView {
     private lazy var marketButton: UIButton = {
         let marketButton = UIButton(type: .system)
         marketButton.translatesAutoresizingMaskIntoConstraints = false
-        marketButton.backgroundColor = .blue
         marketButton.setTitle("РЫНОК", for: .normal)
-        marketButton.setTitleColor(.white, for: .normal)
+        marketButton.setTitleColor(.textPrimary, for: .normal)
         marketButton.tag = 2
         marketButton.addTarget(self, action: #selector(didChangeSelected), for: .touchUpInside)
         marketButton.titleLabel?.font = .oswald(size: 18)
@@ -85,6 +95,7 @@ class WeaponNavigationBarView: UIView {
     
     @objc
     private func didChangeSelected(_ sender: UIButton) {
+        self.selectedIndex = sender.tag
         delegate?.didSelect(index: sender.tag)
     }
 }
@@ -92,7 +103,8 @@ class WeaponNavigationBarView: UIView {
 extension WeaponNavigationBarView {
     
     private func configureView() {
-        backgroundColor = .black
+        backgroundColor = .blackWith70Alpha
+        inventoryButton.backgroundColor = .grayWith50Alpha
         configureSubviews()
         setupConstraints()
     }
@@ -114,9 +126,9 @@ extension WeaponNavigationBarView {
             
             buttonStackView.topAnchor.constraint(equalTo: topAnchor),
             buttonStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            buttonStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            goldCurrencyView.widthAnchor.constraint(equalToConstant: 100),
-            goldCurrencyView.heightAnchor.constraint(equalToConstant: 30),
+            goldCurrencyView.heightAnchor.constraint(equalToConstant: 20),
         
         ])
     }

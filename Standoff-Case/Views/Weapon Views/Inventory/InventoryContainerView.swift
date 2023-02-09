@@ -14,8 +14,7 @@ class InventoryContainerView: UIView, UICollectionViewDelegate {
     private lazy var inventoryBackView: UIView = {
         let inventoryBackView = UIView()
         inventoryBackView.translatesAutoresizingMaskIntoConstraints = false
-        inventoryBackView.backgroundColor = .black
-//        inventoryBackView.layer.opacity = 0.3
+        inventoryBackView.backgroundColor = .blackWith50Alpha
         return inventoryBackView
     }()
     
@@ -23,7 +22,7 @@ class InventoryContainerView: UIView, UICollectionViewDelegate {
         let viewLayout = UICollectionViewFlowLayout()
         let collectionInventoryView = UICollectionView(frame: .zero, collectionViewLayout: viewLayout)
         collectionInventoryView.translatesAutoresizingMaskIntoConstraints = false
-        collectionInventoryView.backgroundColor = .white
+        collectionInventoryView.backgroundColor = .clear
         collectionInventoryView.register(InventoryCollectionViewCell.self, forCellWithReuseIdentifier: "inventoryCell")
         collectionInventoryView.delegate = self
         collectionInventoryView.dataSource = self
@@ -67,8 +66,8 @@ extension InventoryContainerView {
             
             collectionInventoryView.topAnchor.constraint(equalTo: inventoryBackView.topAnchor, constant: 5),
             collectionInventoryView.leadingAnchor.constraint(equalTo: inventoryBackView.leadingAnchor, constant: 5),
-            collectionInventoryView.trailingAnchor.constraint(equalTo: inventoryBackView.trailingAnchor, constant: 5),
-            collectionInventoryView.bottomAnchor.constraint(equalTo: inventoryBackView.bottomAnchor, constant: 5),
+            collectionInventoryView.trailingAnchor.constraint(equalTo: inventoryBackView.trailingAnchor, constant: -5),
+            collectionInventoryView.bottomAnchor.constraint(equalTo: inventoryBackView.bottomAnchor, constant: -5),
         ])
     }
 }
@@ -84,10 +83,14 @@ extension InventoryContainerView: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        .init(width: (collectionView.frame.width - 8) / 5, height: (collectionView.frame.width - 8) / 5 * 0.66)
+        .init(width: (collectionView.frame.width - 20) / 5, height: (collectionView.frame.width - 8) / 5 * 0.66)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
     }
 }

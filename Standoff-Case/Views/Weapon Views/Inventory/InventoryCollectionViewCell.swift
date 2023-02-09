@@ -14,7 +14,7 @@ class InventoryCollectionViewCell: UICollectionViewCell {
     private lazy var squareBackViewWeapon: UIView = {
         let squareBackView = UIView()
         squareBackView.translatesAutoresizingMaskIntoConstraints = false
-        squareBackView.backgroundColor = .gray
+        squareBackView.backgroundColor = .clear
 
         return squareBackView
     }()
@@ -29,7 +29,7 @@ class InventoryCollectionViewCell: UICollectionViewCell {
     private lazy var weaponNameLabel: UILabel = {
         let weaponNameLabel = UILabel()
         weaponNameLabel.translatesAutoresizingMaskIntoConstraints = false
-        weaponNameLabel.textColor = .white
+        weaponNameLabel.textColor = .textPrimary
         weaponNameLabel.text = "ARK SCALE"
         weaponNameLabel.textAlignment = .left
         return weaponNameLabel
@@ -68,6 +68,7 @@ extension InventoryCollectionViewCell {
     
     private func configureSubviews() {
         contentView.addSubview(squareBackViewWeapon)
+        squareBackViewWeapon.backgroundColor = .gray2With30Alpha
         squareBackViewWeapon.addSubview(weaponIcon)
         squareBackViewWeapon.addSubview(weaponColorLineView)
         weaponColorLineView.addSubview(weaponNameLabel)

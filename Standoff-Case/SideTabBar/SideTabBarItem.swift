@@ -32,8 +32,8 @@ class SideTabBarItem: UIControl {
     }
     
     private var style = Style(font: .systemFont(ofSize: 15),
-                              titleColor: .white,
-                              selectedTitleColor: .white,
+                              titleColor: .textPrimary,
+                              selectedTitleColor: .textPrimary,
                               selectedBackgroundColor: .blackWith50Alpha,
                               backgroundColor: .blackWith70Alpha)
     
