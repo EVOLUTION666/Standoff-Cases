@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   
         guard let scene = (scene as? UIWindowScene) else { return }
         window = .init(windowScene: scene)
-        window?.rootViewController = SideTabBarController()
+        window?.rootViewController = UINavigationController(rootViewController: Presenter3DTableViewController())//SideTabBarController()
         window?.makeKeyAndVisible()
     }
 

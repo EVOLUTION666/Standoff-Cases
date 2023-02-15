@@ -46,8 +46,13 @@
 		E25E79F82991773800FF2C04 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79F72991773800FF2C04 /* ProfileView.swift */; };
 		E25E79FB2991775E00FF2C04 /* CALayer+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79FA2991775E00FF2C04 /* CALayer+Gradient.swift */; };
 		E25E79FD2991778500FF2C04 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79FC2991778500FF2C04 /* UIColor+AppColors.swift */; };
+		E283E0512992B24100D41F33 /* Presenter3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283E0502992B24100D41F33 /* Presenter3DViewController.swift */; };
+		E293431D299C551A00906D00 /* Gun in Resources */ = {isa = PBXBuildFile; fileRef = E293431C299C551A00906D00 /* Gun */; };
 		E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */; };
 		E2AFCDF02990423C00071AD7 /* ShopGroupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */; };
+		E2D6C5712994190700BEB9D7 /* WeaponDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C5702994190700BEB9D7 /* WeaponDetailsViewController.swift */; };
+		E2D6C57329941A6000BEB9D7 /* WeaponDetailsControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C57229941A5F00BEB9D7 /* WeaponDetailsControlView.swift */; };
+		E2D6C57529941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C57429941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift */; };
 		E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */; };
 		E2E5C3CA298590AB008A2221 /* SideTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3C9298590AB008A2221 /* SideTabBarItem.swift */; };
 		E2E5C3CC298590CA008A2221 /* SideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3CB298590CA008A2221 /* SideTabBar.swift */; };
@@ -55,6 +60,13 @@
 		E2E5C3D12986A510008A2221 /* ProfileRankCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3D02986A510008A2221 /* ProfileRankCollectionCell.swift */; };
 		E2E5C3D32986A59E008A2221 /* ProfileRankMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3D22986A59E008A2221 /* ProfileRankMapper.swift */; };
 		E2E5C3D62986B035008A2221 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3D52986B035008A2221 /* TasksViewController.swift */; };
+		E2EB4EF6299C1220001FB4F2 /* AKR-ABC.obj in Resources */ = {isa = PBXBuildFile; fileRef = E2EB4EF5299C1220001FB4F2 /* AKR-ABC.obj */; };
+		E2EB4EF9299C1233001FB4F2 /* AKR_N.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EB4EF7299C1233001FB4F2 /* AKR_N.png */; };
+		E2EB4EFA299C1233001FB4F2 /* AKR_TreasureHunter_A.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EB4EF8299C1233001FB4F2 /* AKR_TreasureHunter_A.png */; };
+		E2EB4EFC299C1269001FB4F2 /* 1.obj in Resources */ = {isa = PBXBuildFile; fileRef = E2EB4EFB299C1269001FB4F2 /* 1.obj */; };
+		E2EB4EFE299C127B001FB4F2 /* DiffuseColor_Texture.png in Resources */ = {isa = PBXBuildFile; fileRef = E2EB4EFD299C127B001FB4F2 /* DiffuseColor_Texture.png */; };
+		E2EB4F00299C132D001FB4F2 /* ImageToStl.com_akr (1).dae in Resources */ = {isa = PBXBuildFile; fileRef = E2EB4EFF299C132D001FB4F2 /* ImageToStl.com_akr (1).dae */; };
+		E2EB4F02299C1A94001FB4F2 /* LOD0_M4-full.obj in Resources */ = {isa = PBXBuildFile; fileRef = E2EB4F01299C1A94001FB4F2 /* LOD0_M4-full.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,8 +111,13 @@
 		E25E79F72991773800FF2C04 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E25E79FA2991775E00FF2C04 /* CALayer+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Gradient.swift"; sourceTree = "<group>"; };
 		E25E79FC2991778500FF2C04 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		E283E0502992B24100D41F33 /* Presenter3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter3DViewController.swift; sourceTree = "<group>"; };
+		E293431C299C551A00906D00 /* Gun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Gun; sourceTree = "<group>"; };
 		E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedStackView.swift; sourceTree = "<group>"; };
 		E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGroupItemView.swift; sourceTree = "<group>"; };
+		E2D6C5702994190700BEB9D7 /* WeaponDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailsViewController.swift; sourceTree = "<group>"; };
+		E2D6C57229941A5F00BEB9D7 /* WeaponDetailsControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailsControlView.swift; sourceTree = "<group>"; };
+		E2D6C57429941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailsBackgroundView.swift; sourceTree = "<group>"; };
 		E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarController.swift; sourceTree = "<group>"; };
 		E2E5C3C9298590AB008A2221 /* SideTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarItem.swift; sourceTree = "<group>"; };
 		E2E5C3CB298590CA008A2221 /* SideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBar.swift; sourceTree = "<group>"; };
@@ -108,6 +125,13 @@
 		E2E5C3D02986A510008A2221 /* ProfileRankCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRankCollectionCell.swift; sourceTree = "<group>"; };
 		E2E5C3D22986A59E008A2221 /* ProfileRankMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRankMapper.swift; sourceTree = "<group>"; };
 		E2E5C3D52986B035008A2221 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		E2EB4EF5299C1220001FB4F2 /* AKR-ABC.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AKR-ABC.obj"; sourceTree = "<group>"; };
+		E2EB4EF7299C1233001FB4F2 /* AKR_N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AKR_N.png; sourceTree = "<group>"; };
+		E2EB4EF8299C1233001FB4F2 /* AKR_TreasureHunter_A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AKR_TreasureHunter_A.png; sourceTree = "<group>"; };
+		E2EB4EFB299C1269001FB4F2 /* 1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.obj; sourceTree = "<group>"; };
+		E2EB4EFD299C127B001FB4F2 /* DiffuseColor_Texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DiffuseColor_Texture.png; sourceTree = "<group>"; };
+		E2EB4EFF299C132D001FB4F2 /* ImageToStl.com_akr (1).dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "ImageToStl.com_akr (1).dae"; sourceTree = "<group>"; };
+		E2EB4F01299C1A94001FB4F2 /* LOD0_M4-full.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LOD0_M4-full.obj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +219,8 @@
 				E2E5C3CD2985922D008A2221 /* Profile */,
 				E2E5C3C629857D72008A2221 /* SideTabBar */,
 				55324494298577390004049F /* SceneDelegate.swift */,
+				E2D6C56F299418ED00BEB9D7 /* WeaponDetails */,
+				E283E04F2992B22900D41F33 /* Presenter3D */,
 				5532449B2985773B0004049F /* Assets.xcassets */,
 				5532449D2985773B0004049F /* LaunchScreen.storyboard */,
 				553244A02985773B0004049F /* Info.plist */,
@@ -312,12 +338,54 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E283E04F2992B22900D41F33 /* Presenter3D */ = {
+			isa = PBXGroup;
+			children = (
+				E293431C299C551A00906D00 /* Gun */,
+				E283E0502992B24100D41F33 /* Presenter3DViewController.swift */,
+				E283E0522992B27400D41F33 /* 3DResources */,
+			);
+			path = Presenter3D;
+			sourceTree = "<group>";
+		};
+		E283E0522992B27400D41F33 /* 3DResources */ = {
+			isa = PBXGroup;
+			children = (
+				E2EB4F01299C1A94001FB4F2 /* LOD0_M4-full.obj */,
+				E2EB4EFB299C1269001FB4F2 /* 1.obj */,
+				E2EB4EFF299C132D001FB4F2 /* ImageToStl.com_akr (1).dae */,
+				E2EB4EFD299C127B001FB4F2 /* DiffuseColor_Texture.png */,
+				E2EB4EF5299C1220001FB4F2 /* AKR-ABC.obj */,
+				E2EB4EF7299C1233001FB4F2 /* AKR_N.png */,
+				E2EB4EF8299C1233001FB4F2 /* AKR_TreasureHunter_A.png */,
+			);
+			path = 3DResources;
+			sourceTree = "<group>";
+		};
 		E2AFCDEE298FC3AC00071AD7 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E2D6C56F299418ED00BEB9D7 /* WeaponDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C5702994190700BEB9D7 /* WeaponDetailsViewController.swift */,
+				E2D6C57629941A7600BEB9D7 /* Views */,
+			);
+			path = WeaponDetails;
+			sourceTree = "<group>";
+		};
+		E2D6C57629941A7600BEB9D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2D6C57229941A5F00BEB9D7 /* WeaponDetailsControlView.swift */,
+				E2D6C57429941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E2E5C3C629857D72008A2221 /* SideTabBar */ = {
@@ -411,13 +479,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EB4EFA299C1233001FB4F2 /* AKR_TreasureHunter_A.png in Resources */,
+				E2EB4EF9299C1233001FB4F2 /* AKR_N.png in Resources */,
+				E2EB4F02299C1A94001FB4F2 /* LOD0_M4-full.obj in Resources */,
 				5536C4E6298D3AB0000E5C56 /* Oswald-ExtraLight.ttf in Resources */,
 				5536C4E7298D3AB0000E5C56 /* Oswald-Bold.ttf in Resources */,
+				E293431D299C551A00906D00 /* Gun in Resources */,
 				5536C4EB298D3AB0000E5C56 /* Oswald-Light.ttf in Resources */,
 				5536C4E9298D3AB0000E5C56 /* Oswald-Regular.ttf in Resources */,
 				5536C4E8298D3AB0000E5C56 /* Oswald-Medium.ttf in Resources */,
+				E2EB4EFC299C1269001FB4F2 /* 1.obj in Resources */,
 				5536C4EA298D3AB0000E5C56 /* Oswald-SemiBold.ttf in Resources */,
 				5532449F2985773B0004049F /* LaunchScreen.storyboard in Resources */,
+				E2EB4F00299C132D001FB4F2 /* ImageToStl.com_akr (1).dae in Resources */,
+				E2EB4EFE299C127B001FB4F2 /* DiffuseColor_Texture.png in Resources */,
+				E2EB4EF6299C1220001FB4F2 /* AKR-ABC.obj in Resources */,
 				5532449C2985773B0004049F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +515,7 @@
 				5518CBC82992E95D008BBE29 /* TradingSortFilterView.swift in Sources */,
 				553244B529868C150004049F /* InventoryContainerView.swift in Sources */,
 				5518CBB72991218D008BBE29 /* ChildPromotionViewController.swift in Sources */,
+				E2D6C57329941A6000BEB9D7 /* WeaponDetailsControlView.swift in Sources */,
 				E25E79FB2991775E00FF2C04 /* CALayer+Gradient.swift in Sources */,
 				5536C4D12989D9A8000E5C56 /* ChildShopViewController.swift in Sources */,
 				E2E5C3CC298590CA008A2221 /* SideTabBar.swift in Sources */,
@@ -449,17 +526,20 @@
 				E25E79F82991773800FF2C04 /* ProfileView.swift in Sources */,
 				E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */,
 				553244AE2985803B0004049F /* WeaponNavigationBarView.swift in Sources */,
+				E2D6C57529941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift in Sources */,
 				E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */,
 				553244A929857D790004049F /* GameViewController.swift in Sources */,
 				5518CBC02992D662008BBE29 /* MarketNavBarView.swift in Sources */,
 				E2E5C3D12986A510008A2221 /* ProfileRankCollectionCell.swift in Sources */,
 				55324493298577390004049F /* AppDelegate.swift in Sources */,
+				E2D6C5712994190700BEB9D7 /* WeaponDetailsViewController.swift in Sources */,
 				E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */,
 				E2E5C3D32986A59E008A2221 /* ProfileRankMapper.swift in Sources */,
 				E25E79F1299176E300FF2C04 /* ProfileProgressView.swift in Sources */,
 				5518CBCD2993DEF9008BBE29 /* MarketCollectionViewCell.swift in Sources */,
 				5518CBC42992D9FB008BBE29 /* ChildHistoryViewController.swift in Sources */,
 				E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */,
+				E283E0512992B24100D41F33 /* Presenter3DViewController.swift in Sources */,
 				5518CBBE29914907008BBE29 /* PromotionContainerView.swift in Sources */,
 				5518CBB929912384008BBE29 /* ShopViewController.swift in Sources */,
 				5536C4DC298D37C6000E5C56 /* ShopCollectionViewCell.swift in Sources */,
@@ -607,7 +687,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7D3Z5CX5PT;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Standoff-Case/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -621,7 +701,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Andrey.Standoff-Casea";
+				PRODUCT_BUNDLE_IDENTIFIER = "Andrey.Standoff-Case";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
