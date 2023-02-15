@@ -47,12 +47,16 @@
 		E25E79FB2991775E00FF2C04 /* CALayer+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79FA2991775E00FF2C04 /* CALayer+Gradient.swift */; };
 		E25E79FD2991778500FF2C04 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79FC2991778500FF2C04 /* UIColor+AppColors.swift */; };
 		E283E0512992B24100D41F33 /* Presenter3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283E0502992B24100D41F33 /* Presenter3DViewController.swift */; };
-		E293431D299C551A00906D00 /* Gun in Resources */ = {isa = PBXBuildFile; fileRef = E293431C299C551A00906D00 /* Gun */; };
+		E2934323299C9A6100906D00 /* Mono #261777.obj in Resources */ = {isa = PBXBuildFile; fileRef = E2934322299C9A6100906D00 /* Mono #261777.obj */; };
+		E2934325299C9A8800906D00 /* Deagle_Ace_A.png in Resources */ = {isa = PBXBuildFile; fileRef = E2934324299C9A8700906D00 /* Deagle_Ace_A.png */; };
+		E2934327299CA17300906D00 /* UMP45.obj in Resources */ = {isa = PBXBuildFile; fileRef = E2934326299CA17300906D00 /* UMP45.obj */; };
+		E2934329299CA1AC00906D00 /* UMP45_4Years_A.png in Resources */ = {isa = PBXBuildFile; fileRef = E2934328299CA1AC00906D00 /* UMP45_4Years_A.png */; };
 		E2AFCDED298FC3A000071AD7 /* GroupedStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */; };
 		E2AFCDF02990423C00071AD7 /* ShopGroupItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */; };
 		E2D6C5712994190700BEB9D7 /* WeaponDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C5702994190700BEB9D7 /* WeaponDetailsViewController.swift */; };
 		E2D6C57329941A6000BEB9D7 /* WeaponDetailsControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C57229941A5F00BEB9D7 /* WeaponDetailsControlView.swift */; };
 		E2D6C57529941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6C57429941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift */; };
+		E2DB5FF5299CB7EC00962542 /* Gun in Resources */ = {isa = PBXBuildFile; fileRef = E2DB5FF4299CB7EC00962542 /* Gun */; };
 		E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */; };
 		E2E5C3CA298590AB008A2221 /* SideTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3C9298590AB008A2221 /* SideTabBarItem.swift */; };
 		E2E5C3CC298590CA008A2221 /* SideTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C3CB298590CA008A2221 /* SideTabBar.swift */; };
@@ -112,12 +116,16 @@
 		E25E79FA2991775E00FF2C04 /* CALayer+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Gradient.swift"; sourceTree = "<group>"; };
 		E25E79FC2991778500FF2C04 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
 		E283E0502992B24100D41F33 /* Presenter3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter3DViewController.swift; sourceTree = "<group>"; };
-		E293431C299C551A00906D00 /* Gun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Gun; sourceTree = "<group>"; };
+		E2934322299C9A6100906D00 /* Mono #261777.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Mono #261777.obj"; sourceTree = "<group>"; };
+		E2934324299C9A8700906D00 /* Deagle_Ace_A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deagle_Ace_A.png; sourceTree = "<group>"; };
+		E2934326299CA17300906D00 /* UMP45.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UMP45.obj; sourceTree = "<group>"; };
+		E2934328299CA1AC00906D00 /* UMP45_4Years_A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UMP45_4Years_A.png; sourceTree = "<group>"; };
 		E2AFCDEC298FC3A000071AD7 /* GroupedStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedStackView.swift; sourceTree = "<group>"; };
 		E2AFCDEF2990423B00071AD7 /* ShopGroupItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGroupItemView.swift; sourceTree = "<group>"; };
 		E2D6C5702994190700BEB9D7 /* WeaponDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailsViewController.swift; sourceTree = "<group>"; };
 		E2D6C57229941A5F00BEB9D7 /* WeaponDetailsControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailsControlView.swift; sourceTree = "<group>"; };
 		E2D6C57429941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponDetailsBackgroundView.swift; sourceTree = "<group>"; };
+		E2DB5FF4299CB7EC00962542 /* Gun */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Gun; sourceTree = "<group>"; };
 		E2E5C3C729857D9D008A2221 /* SideTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarController.swift; sourceTree = "<group>"; };
 		E2E5C3C9298590AB008A2221 /* SideTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBarItem.swift; sourceTree = "<group>"; };
 		E2E5C3CB298590CA008A2221 /* SideTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideTabBar.swift; sourceTree = "<group>"; };
@@ -341,8 +349,8 @@
 		E283E04F2992B22900D41F33 /* Presenter3D */ = {
 			isa = PBXGroup;
 			children = (
-				E293431C299C551A00906D00 /* Gun */,
 				E283E0502992B24100D41F33 /* Presenter3DViewController.swift */,
+				E2DB5FF4299CB7EC00962542 /* Gun */,
 				E283E0522992B27400D41F33 /* 3DResources */,
 			);
 			path = Presenter3D;
@@ -351,6 +359,10 @@
 		E283E0522992B27400D41F33 /* 3DResources */ = {
 			isa = PBXGroup;
 			children = (
+				E2934324299C9A8700906D00 /* Deagle_Ace_A.png */,
+				E2934328299CA1AC00906D00 /* UMP45_4Years_A.png */,
+				E2934326299CA17300906D00 /* UMP45.obj */,
+				E2934322299C9A6100906D00 /* Mono #261777.obj */,
 				E2EB4F01299C1A94001FB4F2 /* LOD0_M4-full.obj */,
 				E2EB4EFB299C1269001FB4F2 /* 1.obj */,
 				E2EB4EFF299C132D001FB4F2 /* ImageToStl.com_akr (1).dae */,
@@ -482,17 +494,21 @@
 				E2EB4EFA299C1233001FB4F2 /* AKR_TreasureHunter_A.png in Resources */,
 				E2EB4EF9299C1233001FB4F2 /* AKR_N.png in Resources */,
 				E2EB4F02299C1A94001FB4F2 /* LOD0_M4-full.obj in Resources */,
+				E2934323299C9A6100906D00 /* Mono #261777.obj in Resources */,
 				5536C4E6298D3AB0000E5C56 /* Oswald-ExtraLight.ttf in Resources */,
 				5536C4E7298D3AB0000E5C56 /* Oswald-Bold.ttf in Resources */,
-				E293431D299C551A00906D00 /* Gun in Resources */,
+				E2934327299CA17300906D00 /* UMP45.obj in Resources */,
+				E2934325299C9A8800906D00 /* Deagle_Ace_A.png in Resources */,
 				5536C4EB298D3AB0000E5C56 /* Oswald-Light.ttf in Resources */,
 				5536C4E9298D3AB0000E5C56 /* Oswald-Regular.ttf in Resources */,
 				5536C4E8298D3AB0000E5C56 /* Oswald-Medium.ttf in Resources */,
 				E2EB4EFC299C1269001FB4F2 /* 1.obj in Resources */,
 				5536C4EA298D3AB0000E5C56 /* Oswald-SemiBold.ttf in Resources */,
 				5532449F2985773B0004049F /* LaunchScreen.storyboard in Resources */,
+				E2934329299CA1AC00906D00 /* UMP45_4Years_A.png in Resources */,
 				E2EB4F00299C132D001FB4F2 /* ImageToStl.com_akr (1).dae in Resources */,
 				E2EB4EFE299C127B001FB4F2 /* DiffuseColor_Texture.png in Resources */,
+				E2DB5FF5299CB7EC00962542 /* Gun in Resources */,
 				E2EB4EF6299C1220001FB4F2 /* AKR-ABC.obj in Resources */,
 				5532449C2985773B0004049F /* Assets.xcassets in Resources */,
 			);
@@ -687,7 +703,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7D3Z5CX5PT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Standoff-Case/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -701,7 +717,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Andrey.Standoff-Case";
+				PRODUCT_BUNDLE_IDENTIFIER = "Andrey.Standoff-Casea";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
