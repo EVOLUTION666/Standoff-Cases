@@ -22,7 +22,7 @@ class InventoryCollectionViewCell: UICollectionViewCell {
     private lazy var weaponColorLineView: UIView = {
         let weaponColorLineView = UIView()
         weaponColorLineView.translatesAutoresizingMaskIntoConstraints = false
-        weaponColorLineView.backgroundColor = .blue
+        weaponColorLineView.backgroundColor = .blueGradientStart
         return weaponColorLineView
     }()
     
@@ -30,7 +30,8 @@ class InventoryCollectionViewCell: UICollectionViewCell {
         let weaponNameLabel = UILabel()
         weaponNameLabel.translatesAutoresizingMaskIntoConstraints = false
         weaponNameLabel.textColor = .textPrimary
-        weaponNameLabel.text = "ARK SCALE"
+        weaponNameLabel.text = "ARK Scale"
+        weaponNameLabel.font = .oswald(size: 10)
         weaponNameLabel.textAlignment = .left
         return weaponNameLabel
     }()
@@ -85,13 +86,14 @@ extension InventoryCollectionViewCell {
             weaponIcon.leadingAnchor.constraint(equalTo: squareBackViewWeapon.leadingAnchor),
             weaponIcon.trailingAnchor.constraint(equalTo: squareBackViewWeapon.trailingAnchor),
             
-            weaponColorLineView.topAnchor.constraint(equalTo: weaponIcon.bottomAnchor, constant: 0),
+            weaponColorLineView.topAnchor.constraint(equalTo: weaponIcon.bottomAnchor),
             weaponColorLineView.leadingAnchor.constraint(equalTo: squareBackViewWeapon.leadingAnchor),
             weaponColorLineView.trailingAnchor.constraint(equalTo: squareBackViewWeapon.trailingAnchor),
             weaponColorLineView.bottomAnchor.constraint(equalTo: squareBackViewWeapon.bottomAnchor),
+            weaponColorLineView.heightAnchor.constraint(equalToConstant: 20),
             
             weaponNameLabel.topAnchor.constraint(equalTo: weaponColorLineView.topAnchor),
-            weaponNameLabel.leadingAnchor.constraint(equalTo: weaponColorLineView.leadingAnchor),
+            weaponNameLabel.leadingAnchor.constraint(equalTo: weaponColorLineView.leadingAnchor, constant: 5),
             weaponNameLabel.trailingAnchor.constraint(equalTo: weaponColorLineView.trailingAnchor),
             weaponNameLabel.bottomAnchor.constraint(equalTo: weaponColorLineView.bottomAnchor),
         ])

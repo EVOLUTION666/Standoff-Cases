@@ -23,6 +23,7 @@ class InventoryContainerView: UIView, UICollectionViewDelegate {
         let collectionInventoryView = UICollectionView(frame: .zero, collectionViewLayout: viewLayout)
         collectionInventoryView.translatesAutoresizingMaskIntoConstraints = false
         collectionInventoryView.backgroundColor = .clear
+        collectionInventoryView.showsVerticalScrollIndicator = false
         collectionInventoryView.register(InventoryCollectionViewCell.self, forCellWithReuseIdentifier: "inventoryCell")
         collectionInventoryView.delegate = self
         collectionInventoryView.dataSource = self
@@ -74,7 +75,7 @@ extension InventoryContainerView {
 
 extension InventoryContainerView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return 50
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

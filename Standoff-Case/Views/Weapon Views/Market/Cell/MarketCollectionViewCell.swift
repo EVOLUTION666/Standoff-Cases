@@ -57,7 +57,7 @@ class MarketCollectionViewCell: UICollectionViewCell {
     private lazy var bottomView: UIView = {
        let bottomView = UIView()
         bottomView.translatesAutoresizingMaskIntoConstraints = false
-        bottomView.backgroundColor = .orange
+        bottomView.backgroundColor = .gray2With30Alpha
         return bottomView
     }()
     
@@ -65,6 +65,7 @@ class MarketCollectionViewCell: UICollectionViewCell {
        let countLabel = UILabel()
         countLabel.translatesAutoresizingMaskIntoConstraints = false
         countLabel.text = "343 ШТ"
+        countLabel.textColor = .white
         countLabel.font = .oswald(size: 10, weight: .light)
         return countLabel
     }()
@@ -81,6 +82,7 @@ class MarketCollectionViewCell: UICollectionViewCell {
         priceLabel.text = "120.00"
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
         priceLabel.font = .oswald(size: 10, weight: .light)
+        priceLabel.textColor = .white
         return priceLabel
     }()
     

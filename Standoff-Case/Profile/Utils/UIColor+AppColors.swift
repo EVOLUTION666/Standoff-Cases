@@ -87,7 +87,17 @@ extension UIColor {
     static var goldSquare: UIColor {
         .init(named: "goldSquare") ?? .clear
     }
-
+    
+    // #30445A
+    static var blueStartColor: UIColor {
+        .init(named: "blueStartColor") ?? .clear
+    }
+    
+    // #156F9E
+    static var blueEndColor: UIColor {
+        .init(named: "blueEndColor") ?? .clear
+    }
+    
 }
 
 extension UIColor {

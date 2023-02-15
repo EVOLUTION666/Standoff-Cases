@@ -8,6 +8,7 @@
 import UIKit
 
 extension CALayer {
+    
     static var baseGradientLayer: CAGradientLayer {
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.baseGradientStart.cgColor, UIColor.baseGradientEnd.cgColor]
@@ -31,4 +32,5 @@ extension CALayer {
         gradient.endPoint = .init(x: 1, y: 0)
         return gradient
     }
+    
 }
