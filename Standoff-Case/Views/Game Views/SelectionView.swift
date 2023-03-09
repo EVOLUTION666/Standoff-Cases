@@ -76,7 +76,7 @@ class SelectionView: UIView {
     private lazy var depositView: UIView = {
        let depositView = UIView()
         depositView.translatesAutoresizingMaskIntoConstraints = false
-        depositView.backgroundColor = .blue
+        depositView.backgroundColor = .gameButtonColor
         depositView.layer.cornerRadius = 5
         depositView.layer.masksToBounds = true
         return depositView
@@ -95,7 +95,7 @@ class SelectionView: UIView {
     private lazy var winView: UIView = {
        let winView = UIView()
         winView.translatesAutoresizingMaskIntoConstraints = false
-        winView.backgroundColor = .blue
+        winView.backgroundColor = .gameButtonColor
         winView.layer.cornerRadius = 5
         winView.layer.masksToBounds = true
         return winView
@@ -125,7 +125,7 @@ class SelectionView: UIView {
         firstXButton.translatesAutoresizingMaskIntoConstraints = false
         firstXButton.setTitle("1.1X", for: .normal)
         firstXButton.setTitleColor(.white, for: .normal)
-        firstXButton.backgroundColor = .blue
+        firstXButton.backgroundColor = .gameButtonColor
 //        firstXButton.addDashedBorder()
         firstXButton.titleLabel?.font = .oswald(size: 11)
         firstXButton.layer.cornerRadius = 5
@@ -138,7 +138,7 @@ class SelectionView: UIView {
         secondXButton.translatesAutoresizingMaskIntoConstraints = false
         secondXButton.setTitle("1.5X", for: .normal)
         secondXButton.setTitleColor(.white, for: .normal)
-        secondXButton.backgroundColor = .blue
+        secondXButton.backgroundColor = .gameButtonColor
         secondXButton.titleLabel?.font = .oswald(size: 11)
         secondXButton.layer.cornerRadius = 5
         secondXButton.layer.masksToBounds = true
@@ -150,7 +150,7 @@ class SelectionView: UIView {
         thirdXButton.translatesAutoresizingMaskIntoConstraints = false
         thirdXButton.setTitle("2X", for: .normal)
         thirdXButton.setTitleColor(.white, for: .normal)
-        thirdXButton.backgroundColor = .blue
+        thirdXButton.backgroundColor = .gameButtonColor
         thirdXButton.titleLabel?.font = .oswald(size: 11)
         thirdXButton.layer.cornerRadius = 5
         thirdXButton.layer.masksToBounds = true
@@ -162,7 +162,7 @@ class SelectionView: UIView {
         fourthXButton.translatesAutoresizingMaskIntoConstraints = false
         fourthXButton.setTitle("3X", for: .normal)
         fourthXButton.setTitleColor(.white, for: .normal)
-        fourthXButton.backgroundColor = .blue
+        fourthXButton.backgroundColor = .gameButtonColor
         fourthXButton.titleLabel?.font = .oswald(size: 11)
         fourthXButton.layer.cornerRadius = 5
         fourthXButton.layer.masksToBounds = true
@@ -172,10 +172,9 @@ class SelectionView: UIView {
     private lazy var settingButton: UIButton = {
        let settingButton = UIButton(type: .system)
         settingButton.translatesAutoresizingMaskIntoConstraints = false
-        settingButton.setTitleColor(.white, for: .normal)
+        settingButton.tintColor = .white
         settingButton.setImage(UIImage(named: "settings"), for: .normal)
-        settingButton.titleLabel?.font = .oswald(size: 11)
-        settingButton.backgroundColor = .blue
+        settingButton.backgroundColor = .gameButtonColor
         settingButton.layer.cornerRadius = 5
         settingButton.layer.masksToBounds = true
         return settingButton
@@ -195,7 +194,7 @@ class SelectionView: UIView {
         betButton.setTitleColor(.white, for: .normal)
         betButton.setTitle("СОЗДАТЬ СТАВКУ", for: .normal)
         betButton.titleLabel?.font = .oswald(size: 11)
-        betButton.backgroundColor = .blue
+        betButton.backgroundColor = .gameButtonColor
         betButton.layer.cornerRadius = 5
         betButton.layer.masksToBounds = true
         return betButton

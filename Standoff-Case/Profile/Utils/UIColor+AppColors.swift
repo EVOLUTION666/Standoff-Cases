@@ -123,6 +123,33 @@ extension UIColor {
         .init(named: "blueEndColor") ?? .clear
     }
     
+    // MARK: - Crash Game Colors
+    
+    // #281F83
+    static var gameButtonColor: UIColor {
+        .init(named: "gameButtonColor") ?? .clear
+    }
+    
+    // #E45858
+    static var coeffRedColor: UIColor {
+        .init(named: "coeffRedColor") ?? .clear
+    }
+    
+    // #56AD7E
+    static var coeffGreenColor: UIColor {
+        .init(named: "coeffGreenColor") ?? .clear
+    }
+    
+    // #E0C184
+    static var coeffGoldColor: UIColor {
+        .init(named: "coeffGoldColor") ?? .clear
+    }
+    
+    // #7282F4
+    static var coeffBlueColor: UIColor {
+        .init(named: "coeffBlueColor") ?? .clear
+    }
+    
 }
 
 extension UIColor {
