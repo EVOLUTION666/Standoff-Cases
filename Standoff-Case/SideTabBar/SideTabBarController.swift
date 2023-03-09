@@ -35,9 +35,9 @@ class SideTabBarController: UIViewController, SideTabBarDelegate {
         
         let weaponVC = WeaponViewController()
 
-        let tasksVC = TasksViewController()
+        let gameVC = GameViewController()
         
-        self.viewControllers = [profileVC, weaponVC, tasksVC]
+        self.viewControllers = [profileVC, weaponVC, gameVC]
         self.add(profileVC)
         
     }

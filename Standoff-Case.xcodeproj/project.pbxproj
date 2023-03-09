@@ -16,6 +16,10 @@
 		5518CBC82992E95D008BBE29 /* TradingSortFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518CBC72992E95D008BBE29 /* TradingSortFilterView.swift */; };
 		5518CBCA2993DDD0008BBE29 /* MarketWeaponViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518CBC92993DDD0008BBE29 /* MarketWeaponViewContainer.swift */; };
 		5518CBCD2993DEF9008BBE29 /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518CBCC2993DEF9008BBE29 /* MarketCollectionViewCell.swift */; };
+		552B452629AA66220087EA36 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B452529AA66220087EA36 /* ChartView.swift */; };
+		552B452829AA91840087EA36 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B452729AA91840087EA36 /* SelectionView.swift */; };
+		552B452A29ABC1930087EA36 /* CoefficientCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B452929ABC1930087EA36 /* CoefficientCarouselView.swift */; };
+		552B452C29ABC7280087EA36 /* CoefficientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B452B29ABC7280087EA36 /* CoefficientViewCell.swift */; };
 		55324493298577390004049F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55324492298577390004049F /* AppDelegate.swift */; };
 		55324495298577390004049F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55324494298577390004049F /* SceneDelegate.swift */; };
 		5532449C2985773B0004049F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5532449B2985773B0004049F /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 		5536C4EB298D3AB0000E5C56 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5536C4E5298D3AB0000E5C56 /* Oswald-Light.ttf */; };
 		5536C4ED298D3BF6000E5C56 /* UIFont + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */; };
 		5536C4EF298DDC00000E5C56 /* ShopNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */; };
+		55B8BD2129B39EE600D424E5 /* PlayerBetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2029B39EE600D424E5 /* PlayerBetsView.swift */; };
+		55B8BD2329B3A24B00D424E5 /* PlayerBetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2229B3A24B00D424E5 /* PlayerBetViewCell.swift */; };
+		55B8BD2729B608F400D424E5 /* DigitalNumbers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55B8BD2629B5FFBE00D424E5 /* DigitalNumbers-Regular.ttf */; };
+		55B8BD2B29B616C700D424E5 /* ChartCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */; };
 		E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25690072989C9BE00560E01 /* ContainerViewController.swift */; };
 		E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */; };
 		E25E79F1299176E300FF2C04 /* ProfileProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */; };
@@ -83,6 +91,10 @@
 		5518CBC72992E95D008BBE29 /* TradingSortFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingSortFilterView.swift; sourceTree = "<group>"; };
 		5518CBC92993DDD0008BBE29 /* MarketWeaponViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketWeaponViewContainer.swift; sourceTree = "<group>"; };
 		5518CBCC2993DEF9008BBE29 /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
+		552B452529AA66220087EA36 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		552B452729AA91840087EA36 /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		552B452929ABC1930087EA36 /* CoefficientCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoefficientCarouselView.swift; sourceTree = "<group>"; };
+		552B452B29ABC7280087EA36 /* CoefficientViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoefficientViewCell.swift; sourceTree = "<group>"; };
 		5532448F298577390004049F /* Standoff-Case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Standoff-Case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55324492298577390004049F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55324494298577390004049F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +120,10 @@
 		5536C4E5298D3AB0000E5C56 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
 		5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Ext.swift"; sourceTree = "<group>"; };
 		5536C4EE298DDC00000E5C56 /* ShopNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopNavBarView.swift; sourceTree = "<group>"; };
+		55B8BD2029B39EE600D424E5 /* PlayerBetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBetsView.swift; sourceTree = "<group>"; };
+		55B8BD2229B3A24B00D424E5 /* PlayerBetViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBetViewCell.swift; sourceTree = "<group>"; };
+		55B8BD2629B5FFBE00D424E5 /* DigitalNumbers-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DigitalNumbers-Regular.ttf"; sourceTree = "<group>"; };
+		55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCreateView.swift; sourceTree = "<group>"; };
 		E25690072989C9BE00560E01 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProgressView.swift; sourceTree = "<group>"; };
@@ -200,6 +216,28 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		552B452329AA64EB0087EA36 /* Game Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				553244A829857D790004049F /* GameViewController.swift */,
+			);
+			path = "Game Controllers";
+			sourceTree = "<group>";
+		};
+		552B452429AA65DE0087EA36 /* Game Views */ = {
+			isa = PBXGroup;
+			children = (
+				552B452529AA66220087EA36 /* ChartView.swift */,
+				552B452729AA91840087EA36 /* SelectionView.swift */,
+				552B452929ABC1930087EA36 /* CoefficientCarouselView.swift */,
+				552B452B29ABC7280087EA36 /* CoefficientViewCell.swift */,
+				55B8BD2029B39EE600D424E5 /* PlayerBetsView.swift */,
+				55B8BD2229B3A24B00D424E5 /* PlayerBetViewCell.swift */,
+				55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */,
+			);
+			path = "Game Views";
+			sourceTree = "<group>";
+		};
 		55324486298577390004049F = {
 			isa = PBXGroup;
 			children = (
@@ -219,21 +257,21 @@
 		55324491298577390004049F /* Standoff-Case */ = {
 			isa = PBXGroup;
 			children = (
+				55324492298577390004049F /* AppDelegate.swift */,
+				55324494298577390004049F /* SceneDelegate.swift */,
 				5536C4DF298D3AA4000E5C56 /* Fonts */,
 				E2E5C3D42986B018008A2221 /* Tasks */,
 				553244B129858A0D0004049F /* Views */,
 				553244AC29857D8C0004049F /* Controllers */,
-				55324492298577390004049F /* AppDelegate.swift */,
 				E2E5C3CD2985922D008A2221 /* Profile */,
 				E2E5C3C629857D72008A2221 /* SideTabBar */,
-				55324494298577390004049F /* SceneDelegate.swift */,
 				E2D6C56F299418ED00BEB9D7 /* WeaponDetails */,
 				E283E04F2992B22900D41F33 /* Presenter3D */,
+				E2AFCDEE298FC3AC00071AD7 /* CustomViews */,
 				5532449B2985773B0004049F /* Assets.xcassets */,
 				5532449D2985773B0004049F /* LaunchScreen.storyboard */,
 				553244A02985773B0004049F /* Info.plist */,
 				5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */,
-				E2AFCDEE298FC3AC00071AD7 /* CustomViews */,
 			);
 			path = "Standoff-Case";
 			sourceTree = "<group>";
@@ -242,7 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				5536C4CD2989D983000E5C56 /* Weapon Controllers */,
-				553244A829857D790004049F /* GameViewController.swift */,
+				552B452329AA64EB0087EA36 /* Game Controllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +288,7 @@
 		553244B129858A0D0004049F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				552B452429AA65DE0087EA36 /* Game Views */,
 				5536C4D4298C104E000E5C56 /* Weapon Views */,
 			);
 			path = Views;
@@ -302,14 +341,31 @@
 		5536C4DF298D3AA4000E5C56 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				55B8BD2629B5FFBE00D424E5 /* DigitalNumbers-Regular.ttf */,
 				5536C4E1298D3AAF000E5C56 /* Oswald-Bold.ttf */,
 				5536C4E0298D3AAF000E5C56 /* Oswald-ExtraLight.ttf */,
 				5536C4E5298D3AB0000E5C56 /* Oswald-Light.ttf */,
 				5536C4E2298D3AAF000E5C56 /* Oswald-Medium.ttf */,
 				5536C4E3298D3AAF000E5C56 /* Oswald-Regular.ttf */,
 				5536C4E4298D3AB0000E5C56 /* Oswald-SemiBold.ttf */,
+				55B8BD2529B5FF9D00D424E5 /* Digital Numbers */,
+				55B8BD2429B5FF9300D424E5 /* Oswald */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		55B8BD2429B5FF9300D424E5 /* Oswald */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Oswald;
+			sourceTree = "<group>";
+		};
+		55B8BD2529B5FF9D00D424E5 /* Digital Numbers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Digital Numbers";
 			sourceTree = "<group>";
 		};
 		E25E79F42991770D00FF2C04 /* ProgressView */ = {
@@ -507,6 +563,7 @@
 				5532449F2985773B0004049F /* LaunchScreen.storyboard in Resources */,
 				E2934329299CA1AC00906D00 /* UMP45_4Years_A.png in Resources */,
 				E2EB4F00299C132D001FB4F2 /* ImageToStl.com_akr (1).dae in Resources */,
+				55B8BD2729B608F400D424E5 /* DigitalNumbers-Regular.ttf in Resources */,
 				E2EB4EFE299C127B001FB4F2 /* DiffuseColor_Texture.png in Resources */,
 				E2DB5FF5299CB7EC00962542 /* Gun in Resources */,
 				E2EB4EF6299C1220001FB4F2 /* AKR-ABC.obj in Resources */,
@@ -522,11 +579,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5518CBC62992DA0A008BBE29 /* ChildTradeViewController.swift in Sources */,
+				55B8BD2329B3A24B00D424E5 /* PlayerBetViewCell.swift in Sources */,
 				5518CBCA2993DDD0008BBE29 /* MarketWeaponViewContainer.swift in Sources */,
+				552B452A29ABC1930087EA36 /* CoefficientCarouselView.swift in Sources */,
 				5536C4D32989D9B1000E5C56 /* MarketViewController.swift in Sources */,
 				E2E5C3CF298592DC008A2221 /* ProfileViewController.swift in Sources */,
 				5536C4ED298D3BF6000E5C56 /* UIFont + Ext.swift in Sources */,
 				5536C4D8298C1184000E5C56 /* ShopContainerView.swift in Sources */,
+				55B8BD2B29B616C700D424E5 /* ChartCreateView.swift in Sources */,
 				E25E79FD2991778500FF2C04 /* UIColor+AppColors.swift in Sources */,
 				5518CBC82992E95D008BBE29 /* TradingSortFilterView.swift in Sources */,
 				553244B529868C150004049F /* InventoryContainerView.swift in Sources */,
@@ -544,6 +604,8 @@
 				553244AE2985803B0004049F /* WeaponNavigationBarView.swift in Sources */,
 				E2D6C57529941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift in Sources */,
 				E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */,
+				552B452829AA91840087EA36 /* SelectionView.swift in Sources */,
+				552B452629AA66220087EA36 /* ChartView.swift in Sources */,
 				553244A929857D790004049F /* GameViewController.swift in Sources */,
 				5518CBC02992D662008BBE29 /* MarketNavBarView.swift in Sources */,
 				E2E5C3D12986A510008A2221 /* ProfileRankCollectionCell.swift in Sources */,
@@ -551,6 +613,7 @@
 				E2D6C5712994190700BEB9D7 /* WeaponDetailsViewController.swift in Sources */,
 				E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */,
 				E2E5C3D32986A59E008A2221 /* ProfileRankMapper.swift in Sources */,
+				55B8BD2129B39EE600D424E5 /* PlayerBetsView.swift in Sources */,
 				E25E79F1299176E300FF2C04 /* ProfileProgressView.swift in Sources */,
 				5518CBCD2993DEF9008BBE29 /* MarketCollectionViewCell.swift in Sources */,
 				5518CBC42992D9FB008BBE29 /* ChildHistoryViewController.swift in Sources */,
@@ -564,6 +627,7 @@
 				553244B72986A0950004049F /* InventoryCollectionViewCell.swift in Sources */,
 				E25E79F3299176F900FF2C04 /* ProgressView.swift in Sources */,
 				55324495298577390004049F /* SceneDelegate.swift in Sources */,
+				552B452C29ABC7280087EA36 /* CoefficientViewCell.swift in Sources */,
 				5536C4EF298DDC00000E5C56 /* ShopNavBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
