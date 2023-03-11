@@ -47,7 +47,7 @@ class ProfileViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .clear
+        view.backgroundColor = .blackWith35Alpha
         view.addSubview(profileView)
         view.addSubview(progressView)
         view.addSubview(ranksBackgroundView)

@@ -47,6 +47,8 @@
 		55B8BD2329B3A24B00D424E5 /* PlayerBetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2229B3A24B00D424E5 /* PlayerBetViewCell.swift */; };
 		55B8BD2729B608F400D424E5 /* DigitalNumbers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55B8BD2629B5FFBE00D424E5 /* DigitalNumbers-Regular.ttf */; };
 		55B8BD2B29B616C700D424E5 /* ChartCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */; };
+		55B8BD2D29BB441E00D424E5 /* CoeffGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2C29BB441D00D424E5 /* CoeffGenerator.swift */; };
+		55B8BD2F29BC6D7800D424E5 /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2E29BC6D7800D424E5 /* GameTimer.swift */; };
 		E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25690072989C9BE00560E01 /* ContainerViewController.swift */; };
 		E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */; };
 		E25E79F1299176E300FF2C04 /* ProfileProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */; };
@@ -124,6 +126,8 @@
 		55B8BD2229B3A24B00D424E5 /* PlayerBetViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBetViewCell.swift; sourceTree = "<group>"; };
 		55B8BD2629B5FFBE00D424E5 /* DigitalNumbers-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DigitalNumbers-Regular.ttf"; sourceTree = "<group>"; };
 		55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCreateView.swift; sourceTree = "<group>"; };
+		55B8BD2C29BB441D00D424E5 /* CoeffGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoeffGenerator.swift; sourceTree = "<group>"; };
+		55B8BD2E29BC6D7800D424E5 /* GameTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
 		E25690072989C9BE00560E01 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProgressView.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 				55B8BD2029B39EE600D424E5 /* PlayerBetsView.swift */,
 				55B8BD2229B3A24B00D424E5 /* PlayerBetViewCell.swift */,
 				55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */,
+				55B8BD2E29BC6D7800D424E5 /* GameTimer.swift */,
 			);
 			path = "Game Views";
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				5532449D2985773B0004049F /* LaunchScreen.storyboard */,
 				553244A02985773B0004049F /* Info.plist */,
 				5536C4EC298D3BF6000E5C56 /* UIFont + Ext.swift */,
+				55B8BD2C29BB441D00D424E5 /* CoeffGenerator.swift */,
 			);
 			path = "Standoff-Case";
 			sourceTree = "<group>";
@@ -627,7 +633,9 @@
 				553244B72986A0950004049F /* InventoryCollectionViewCell.swift in Sources */,
 				E25E79F3299176F900FF2C04 /* ProgressView.swift in Sources */,
 				55324495298577390004049F /* SceneDelegate.swift in Sources */,
+				55B8BD2D29BB441E00D424E5 /* CoeffGenerator.swift in Sources */,
 				552B452C29ABC7280087EA36 /* CoefficientViewCell.swift in Sources */,
+				55B8BD2F29BC6D7800D424E5 /* GameTimer.swift in Sources */,
 				5536C4EF298DDC00000E5C56 /* ShopNavBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

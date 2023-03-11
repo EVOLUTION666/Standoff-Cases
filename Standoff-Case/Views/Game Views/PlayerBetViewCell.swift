@@ -12,6 +12,7 @@ class PlayerBetViewCell: UITableViewCell {
     // MARK: - Properties
     
     static let identifier = "playersBetCell"
+    let gradientLayer = CAGradientLayer()
     
     private lazy var backView: UIView = {
         let backView = UIView()
@@ -131,16 +132,13 @@ class PlayerBetViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    let gradientLayer = CAGradientLayer()
-    
-    //     Setting it from layoutSubViews also fine.
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: self.layer)
         gradientLayer.frame = contentView.bounds
         let colors = [UIColor.baseGradientStartWithAlpha15, UIColor.baseGradientEndWithAlpha15]
-        let location = [0.0, 1.0]
+//        let location = [0.0, 1.0]
         
-        backView.addGradient(with: gradientLayer, colorSet: colors, locations: location)
+        backView.addGradient(with: gradientLayer, colorSet: colors)
         gradientLayer.zPosition = -1
     }
 }

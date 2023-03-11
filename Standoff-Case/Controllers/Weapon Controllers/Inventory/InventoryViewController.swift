@@ -22,6 +22,7 @@ class InventoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        view.backgroundColor = .blackWith35Alpha
     }
 }
 

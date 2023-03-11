@@ -44,6 +44,25 @@ class CoefficientViewCell: UICollectionViewCell {
 
 extension CoefficientViewCell {
     
+    public func coeffCellConfigure(coeffArray: [Float], indexPath: IndexPath) {
+        for row in indexPath {
+            let coefficient = coeffArray[row]
+            switch coefficient {
+            case 1.0...1.09:
+                colorView.backgroundColor = .coeffRedColor
+            case 1.10...2.00:
+                colorView.backgroundColor = .coeffBlueColor
+            case 2.01...10.00:
+                colorView.backgroundColor = .coeffGreenColor
+            case 10.01...:
+                colorView.backgroundColor = .coeffGoldColor
+            default:
+                break
+            }
+            coeffLabel.text = String(NSString(format:"%.2f", coeffArray[row]))
+        }
+    }
+    
     private func configureCell() {
         configureSubviews()
         configureConstraints()

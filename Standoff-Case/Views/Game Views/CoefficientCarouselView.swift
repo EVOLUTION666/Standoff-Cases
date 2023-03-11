@@ -11,6 +11,8 @@ class CoefficientCarouselView: UIView {
     
     // MARK: - Properties
     
+    private var coeffArray = [Float]()
+    
     private lazy var collectionView: UICollectionView = {
         let viewLayout = UICollectionViewFlowLayout()
         viewLayout.scrollDirection = .horizontal
@@ -47,6 +49,7 @@ extension CoefficientCarouselView {
     private func configureView() {
         configureSubview()
         configureConstraints()
+        coeffArray = CoeffGenerator.crashGenerator()
     }
     
     private func configureSubview() {
@@ -77,6 +80,7 @@ extension CoefficientCarouselView: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "coeffCell", for: indexPath) as! CoefficientViewCell
+        cell.coeffCellConfigure(coeffArray: coeffArray, indexPath: indexPath)
         cell.layer.cornerRadius = 5
         cell.layer.masksToBounds = true
         return cell

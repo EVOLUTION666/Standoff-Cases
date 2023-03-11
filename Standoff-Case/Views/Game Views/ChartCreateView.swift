@@ -42,8 +42,6 @@ class ChartCreateView: UIView {
         let startColor: UIColor = UIColor(red: 134 / 255, green: 88 / 255, blue: 236 / 255, alpha: 1)
         let endColor: UIColor = UIColor(red: 244 / 255, green: 89 / 255, blue: 146 / 255, alpha: 1)
         
-//        let colors = [startColor, endColor]
-        
         let startPoint: CGPoint = CGPoint(x: backView.bounds.minX + 15, y: backView.bounds.maxY - 15)
         let endPoint: CGPoint = CGPoint(x: backView.bounds.maxX - 15, y: backView.bounds.minY + 15)
         let firstControlPoint: CGPoint = CGPoint(x: backView.bounds.maxX - 70, y: backView.bounds.maxY - 15)
@@ -52,7 +50,7 @@ class ChartCreateView: UIView {
         let graphPath = UIBezierPath()
         graphPath.move(to: startPoint)
         graphPath.addCurve(to: endPoint, controlPoint1: firstControlPoint, controlPoint2: secondControlPoint)
-
+        
         let blueColor = UIColor.systemPink
         blueColor.setStroke()
 

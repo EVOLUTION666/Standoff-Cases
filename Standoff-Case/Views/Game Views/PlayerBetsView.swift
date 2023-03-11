@@ -73,9 +73,6 @@ extension PlayerBetsView: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: PlayerBetViewCell.identifier, for: indexPath) as! PlayerBetViewCell
         cell.selectionStyle = .none
         cell.backgroundColor = .clear
-//        cell.frame = cell.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: -5, right: 0))
-        
-        
         return cell
     }
     

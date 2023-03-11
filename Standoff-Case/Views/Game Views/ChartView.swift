@@ -11,6 +11,9 @@ class ChartView: UIView {
     
     // MARK: - Properties
     
+    var countDown = 10.0
+    var timer = Timer()
+    
     private lazy var backView: UIView = {
         let backView = UIView()
         backView.translatesAutoresizingMaskIntoConstraints = false
@@ -89,9 +92,25 @@ class ChartView: UIView {
 
 extension ChartView {
     
+    func startCountDown() {
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(countDownMethod), userInfo: nil, repeats: true)
+    }
+    
+    @objc func countDownMethod() {
+        
+        if countDown > 0.01 {
+            countDown -= 0.01
+            timerLabel.text = String(NSString(format:"%.2f", countDown)) 
+        } else {
+            timer.invalidate()
+        }
+
+    }
+    
     private func configureView() {
         configureSubViews()
         configureConstraints()
+        startCountDown()
     }
     
     private func configureSubViews() {
