@@ -23,6 +23,7 @@ class ShopContainerView: UIView, UICollectionViewDelegate {
         caseCollectionView.dataSource = self
         return caseCollectionView
     }()
+    
     private lazy var groupView = GroupedStackView().forAutoLayout()
     
     // MARK: - Life cycle
@@ -133,5 +134,5 @@ extension ShopContainerView: UICollectionViewDataSource, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
     }
-    
+
 }

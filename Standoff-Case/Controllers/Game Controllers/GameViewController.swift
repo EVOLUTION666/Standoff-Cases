@@ -19,8 +19,8 @@ class GameViewController: BaseViewController {
         return topStackView
     }()
 
-    private lazy var chartView: ChartView  = {
-       let chartView = ChartView()
+    private lazy var chartView: ChartCreateView  = {
+       let chartView = ChartCreateView()
         chartView.backgroundColor = .blackWith35Alpha
         chartView.translatesAutoresizingMaskIntoConstraints = false
         return chartView

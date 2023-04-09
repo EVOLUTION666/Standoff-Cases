@@ -11,6 +11,9 @@ class InventoryContainerView: UIView, UICollectionViewDelegate {
     
     // MARK: - Properties
     
+    var menuView: InventoryAlertView?
+    var selectedIndexPath: IndexPath?
+    
     private lazy var inventoryBackView: UIView = {
         let inventoryBackView = UIView()
         inventoryBackView.translatesAutoresizingMaskIntoConstraints = false
@@ -74,6 +77,7 @@ extension InventoryContainerView {
 }
 
 extension InventoryContainerView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50
     }
@@ -93,5 +97,37 @@ extension InventoryContainerView: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) else {
+            return
+        }
+        
+        // Remove previous menu view if it exists
+        menuView?.removeFromSuperview()
+        
+        if (indexPath == selectedIndexPath) {
+            // Deselect cell and clear selection state
+            collectionView.deselectItem(at: indexPath, animated: true)
+            selectedIndexPath = nil
+        } else {
+            // Calculate menu view position
+            let menuWidth: CGFloat = 100
+            let menuHeight: CGFloat = 40
+            let cellFrame = collectionView.convert(cell.frame, to: collectionView.superview)
+            let menuX = cellFrame.maxX - (cellFrame.width / 2)
+            let menuY = cellFrame.midY - menuHeight / 2
+            let menuFrame = CGRect(x: menuX, y: menuY, width: menuWidth, height: menuHeight)
+            
+            // Create and show menu view
+            let menuView = InventoryAlertView(frame: menuFrame)
+            collectionView.superview?.addSubview(menuView)
+            self.menuView = menuView
+            
+            // Update selection state
+            selectedIndexPath = indexPath
+        }
     }
 }

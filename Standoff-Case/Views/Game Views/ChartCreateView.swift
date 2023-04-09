@@ -51,16 +51,36 @@ class ChartCreateView: UIView {
         graphPath.move(to: startPoint)
         graphPath.addCurve(to: endPoint, controlPoint1: firstControlPoint, controlPoint2: secondControlPoint)
         
-        let blueColor = UIColor.systemPink
-        blueColor.setStroke()
-
-        graphPath.lineWidth = 2.0
-        graphPath.stroke()
-
+//        let blueColor = UIColor.systemPink
+//        blueColor.setStroke()
+//
+//        graphPath.lineWidth = 2.0
+//        graphPath.stroke()
+        
+        // Create a CAShapeLayer object to display the graph
+        let graphLayer = CAShapeLayer()
+        graphLayer.path = graphPath.cgPath
+        graphLayer.strokeColor = UIColor.systemPink.cgColor
+        graphLayer.fillColor = UIColor.clear.cgColor
+        graphLayer.lineWidth = 3.0
+        
+        // Add the graph layer to the view's layer hierarchy
+        backView.layer.addSublayer(graphLayer)
+        
+        // Add points on view
         drowPoint(point: startPoint, color: .white, radius: 3)
         drowPoint(point: startPoint, color: startColor, radius: 1.5)
         drowPoint(point: endPoint, color: .white, radius: 3)
         drowPoint(point: endPoint, color: endColor, radius: 1.5)
+        
+        // Create a CABasicAnimation to animate the graph growing
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = 0.0
+        animation.toValue = 1.0
+        animation.duration = 10.0
+        
+        // Add the animation to the graph layer
+        graphLayer.add(animation, forKey: "strokeEnd")
     }
 
     func drowPoint(point: CGPoint, color: UIColor, radius: CGFloat) {

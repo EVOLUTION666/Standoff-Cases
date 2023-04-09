@@ -21,7 +21,7 @@ class ChildShopViewController: UIViewController {
         let backView = UIView()
         return backView
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .clear

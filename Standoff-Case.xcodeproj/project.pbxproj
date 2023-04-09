@@ -49,6 +49,7 @@
 		55B8BD2B29B616C700D424E5 /* ChartCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */; };
 		55B8BD2D29BB441E00D424E5 /* CoeffGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2C29BB441D00D424E5 /* CoeffGenerator.swift */; };
 		55B8BD2F29BC6D7800D424E5 /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2E29BC6D7800D424E5 /* GameTimer.swift */; };
+		55D5D64729DB2A1700588EBE /* InventoryAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D5D64629DB2A1700588EBE /* InventoryAlertView.swift */; };
 		E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25690072989C9BE00560E01 /* ContainerViewController.swift */; };
 		E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */; };
 		E25E79F1299176E300FF2C04 /* ProfileProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */; };
@@ -128,6 +129,7 @@
 		55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCreateView.swift; sourceTree = "<group>"; };
 		55B8BD2C29BB441D00D424E5 /* CoeffGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoeffGenerator.swift; sourceTree = "<group>"; };
 		55B8BD2E29BC6D7800D424E5 /* GameTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
+		55D5D64629DB2A1700588EBE /* InventoryAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAlertView.swift; sourceTree = "<group>"; };
 		E25690072989C9BE00560E01 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E25E79F0299176E300FF2C04 /* ProfileProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProgressView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		553244B129858A0D0004049F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				55D5D64529DB29E100588EBE /* Service Views */,
 				552B452429AA65DE0087EA36 /* Game Views */,
 				5536C4D4298C104E000E5C56 /* Weapon Views */,
 			);
@@ -372,6 +375,14 @@
 			children = (
 			);
 			path = "Digital Numbers";
+			sourceTree = "<group>";
+		};
+		55D5D64529DB29E100588EBE /* Service Views */ = {
+			isa = PBXGroup;
+			children = (
+				55D5D64629DB2A1700588EBE /* InventoryAlertView.swift */,
+			);
+			path = "Service Views";
 			sourceTree = "<group>";
 		};
 		E25E79F42991770D00FF2C04 /* ProgressView */ = {
@@ -614,6 +625,7 @@
 				552B452629AA66220087EA36 /* ChartView.swift in Sources */,
 				553244A929857D790004049F /* GameViewController.swift in Sources */,
 				5518CBC02992D662008BBE29 /* MarketNavBarView.swift in Sources */,
+				55D5D64729DB2A1700588EBE /* InventoryAlertView.swift in Sources */,
 				E2E5C3D12986A510008A2221 /* ProfileRankCollectionCell.swift in Sources */,
 				55324493298577390004049F /* AppDelegate.swift in Sources */,
 				E2D6C5712994190700BEB9D7 /* WeaponDetailsViewController.swift in Sources */,
