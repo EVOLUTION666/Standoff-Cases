@@ -7,11 +7,6 @@
 
 import UIKit
 
-//protocol CustomAlertViewDelegate: AnyObject {
-//    func buyButtonTapped()
-//    func previewButtonTapped()
-//}
-
 class InventoryAlertView: UIView {
     
     private lazy var previewButton: UIButton = {
@@ -38,6 +33,8 @@ class InventoryAlertView: UIView {
         return buttonStackView
     }()
     
+    var delegate: CustomAlertViewDelegate?
+    
     // MARK: - Life cycle
     
     override init(frame: CGRect) {
@@ -50,21 +47,12 @@ class InventoryAlertView: UIView {
         configureView()
     }
     
-//    // MARK: - @objc funcs
-//    
-//    @objc func previewButtonTapped() {
-//        presentVC()
-//        print("suka")
-//    }
-//    
-//    func presentVC() {
-//        let rootVC = UINavigationController(rootViewController: InventoryViewController())
-//        let secondVC = Presenter3DViewController()
-//        secondVC.modalPresentationStyle = .fullScreen
-//        secondVC.modalTransitionStyle = .crossDissolve
-//        rootVC.present(secondVC, animated: true)
-//    }
-    
+    // MARK: - @objc funcs
+
+    @objc func previewButtonTapped() {
+        delegate?.previewButtonMethodDelegate()
+        print("suka")
+    }
 }
 
 extension InventoryAlertView {

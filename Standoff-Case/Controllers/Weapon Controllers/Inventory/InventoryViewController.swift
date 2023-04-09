@@ -24,6 +24,7 @@ class InventoryViewController: UIViewController {
         configureUI()
         view.backgroundColor = .blackWith35Alpha
     }
+    
 }
 
 //MARK: - Extension
@@ -47,4 +48,11 @@ extension InventoryViewController {
             inventoryContainerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -5),
         ])
     }
+}
+
+extension InventoryViewController: CustomAlertViewDelegate {
+    func previewButtonMethodDelegate() {
+        print("str")
+    }
+
 }

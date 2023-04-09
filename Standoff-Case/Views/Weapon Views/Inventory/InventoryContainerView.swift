@@ -129,5 +129,14 @@ extension InventoryContainerView: UICollectionViewDataSource, UICollectionViewDe
             // Update selection state
             selectedIndexPath = indexPath
         }
+        menuView?.delegate = self
+    }
+}
+
+extension InventoryContainerView: CustomAlertViewDelegate {
+    func previewButtonMethodDelegate() {
+        print("Hello world")
+        let emptyVC = UINavigationController(rootViewController: Presenter3DTableViewController())
+        self.window?.rootViewController?.present(emptyVC, animated: true)
     }
 }

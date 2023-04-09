@@ -49,6 +49,8 @@
 		55B8BD2B29B616C700D424E5 /* ChartCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */; };
 		55B8BD2D29BB441E00D424E5 /* CoeffGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2C29BB441D00D424E5 /* CoeffGenerator.swift */; };
 		55B8BD2F29BC6D7800D424E5 /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8BD2E29BC6D7800D424E5 /* GameTimer.swift */; };
+		55C9CD8329E2F08C00A8C0B6 /* EmptyCOntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9CD8229E2F08C00A8C0B6 /* EmptyCOntroller.swift */; };
+		55C9CD8529E2F60300A8C0B6 /* CustomAlertViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C9CD8429E2F60300A8C0B6 /* CustomAlertViewDelegate.swift */; };
 		55D5D64729DB2A1700588EBE /* InventoryAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D5D64629DB2A1700588EBE /* InventoryAlertView.swift */; };
 		E25690082989C9BE00560E01 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25690072989C9BE00560E01 /* ContainerViewController.swift */; };
 		E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */; };
@@ -129,6 +131,8 @@
 		55B8BD2A29B616C700D424E5 /* ChartCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCreateView.swift; sourceTree = "<group>"; };
 		55B8BD2C29BB441D00D424E5 /* CoeffGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoeffGenerator.swift; sourceTree = "<group>"; };
 		55B8BD2E29BC6D7800D424E5 /* GameTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
+		55C9CD8229E2F08C00A8C0B6 /* EmptyCOntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCOntroller.swift; sourceTree = "<group>"; };
+		55C9CD8429E2F60300A8C0B6 /* CustomAlertViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewDelegate.swift; sourceTree = "<group>"; };
 		55D5D64629DB2A1700588EBE /* InventoryAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryAlertView.swift; sourceTree = "<group>"; };
 		E25690072989C9BE00560E01 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		E25E79EE29915E3B00FF2C04 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 			children = (
 				5536C4CD2989D983000E5C56 /* Weapon Controllers */,
 				552B452329AA64EB0087EA36 /* Game Controllers */,
+				55C9CD8229E2F08C00A8C0B6 /* EmptyCOntroller.swift */,
+				55C9CD8429E2F60300A8C0B6 /* CustomAlertViewDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -620,6 +626,7 @@
 				E2E5C3C829857D9D008A2221 /* SideTabBarController.swift in Sources */,
 				553244AE2985803B0004049F /* WeaponNavigationBarView.swift in Sources */,
 				E2D6C57529941A6F00BEB9D7 /* WeaponDetailsBackgroundView.swift in Sources */,
+				55C9CD8529E2F60300A8C0B6 /* CustomAlertViewDelegate.swift in Sources */,
 				E25E79EF29915E3B00FF2C04 /* BaseViewController.swift in Sources */,
 				552B452829AA91840087EA36 /* SelectionView.swift in Sources */,
 				552B452629AA66220087EA36 /* ChartView.swift in Sources */,
@@ -645,6 +652,7 @@
 				553244B72986A0950004049F /* InventoryCollectionViewCell.swift in Sources */,
 				E25E79F3299176F900FF2C04 /* ProgressView.swift in Sources */,
 				55324495298577390004049F /* SceneDelegate.swift in Sources */,
+				55C9CD8329E2F08C00A8C0B6 /* EmptyCOntroller.swift in Sources */,
 				55B8BD2D29BB441E00D424E5 /* CoeffGenerator.swift in Sources */,
 				552B452C29ABC7280087EA36 /* CoefficientViewCell.swift in Sources */,
 				55B8BD2F29BC6D7800D424E5 /* GameTimer.swift in Sources */,
