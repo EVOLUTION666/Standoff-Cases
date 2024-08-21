@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>DigitalNumbers-Regular.ttf</string>
 		<string>Oswald-Bold.ttf</string>
 		<string>Oswald-ExtraLight.ttf</string>
 		<string>Oswald-Light.ttf</string>
